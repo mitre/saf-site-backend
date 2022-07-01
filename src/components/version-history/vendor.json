@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_version_history_vendors",
+  "info": {
+    "displayName": "Vendor",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "GuidanceVersion": {
+      "type": "string",
+      "regex": "^(\\d+\\.)?(\\d+\\.)?(\\*|\\d+)$"
+    },
+    "GuidanceLink": {
+      "type": "string",
+      "regex": "(https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|www\\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9]+\\.[^\\s]{2,}|www\\.[a-zA-Z0-9]+\\.[^\\s]{2,})"
+    },
+    "ProfileVersion": {
+      "type": "string",
+      "regex": "^(\\d+\\.)?(\\d+\\.)?(\\*|\\d+)$"
+    },
+    "ProfileRepo": {
+      "type": "string",
+      "regex": "(https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|www\\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9]+\\.[^\\s]{2,}|www\\.[a-zA-Z0-9]+\\.[^\\s]{2,})"
+    },
+    "VersionDate": {
+      "type": "date"
+    }
+  }
+}

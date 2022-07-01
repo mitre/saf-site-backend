@@ -1,0 +1,157 @@
+{
+  "kind": "collectionType",
+  "collectionName": "profiles",
+  "info": {
+    "singularName": "profile",
+    "pluralName": "profiles",
+    "displayName": "Profiles",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "partner": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::partner.partner",
+      "inversedBy": "profiles"
+    },
+    "platform": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::platform.platform",
+      "inversedBy": "profiles"
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "Harden",
+        "Validate"
+      ],
+      "required": true
+    },
+    "ProfileURL": {
+      "type": "string",
+      "regex": "(https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|www\\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9]+\\.[^\\s]{2,}|www\\.[a-zA-Z0-9]+\\.[^\\s]{2,})",
+      "required": true
+    },
+    "profile_category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::profile-category.profile-category",
+      "inversedBy": "profiles"
+    },
+    "ProfileNameLong": {
+      "type": "enumeration",
+      "enum": [
+        "Red Hat 6 STIG",
+        "Red Hat 7 STIG",
+        "Red Hat CVE Vulnerability Scan",
+        "Microsoft Windows 2012r2 Member Server STIG",
+        "Microsoft Windows Server 2016 STIG",
+        "Microsoft Windows Server 2019 STIG",
+        "Docker CE CIS",
+        "Canonical Ubuntu 16.04 STIG",
+        "Microsoft Windows 10 STIG v1r19",
+        "RSA Archer 6 Security Configuration Guide",
+        "Red Hat Jboss Enterprise Application Server 6.3 STIG",
+        "Oracle Java Runtime Environment 7 Unix STIG",
+        "Oracle Java Runtime Environment 8 Unix STIG",
+        "Microsoft IIS 8.5 Server STIG",
+        "Microsoft IIS 8.5 Site STIG",
+        "NGINX Baseline",
+        "Oracle MySQL Enterprise Edition 5.7 CIS",
+        "AWS RDS MySQL Enterprise Edition 5.7 CIS",
+        "Crunchy Data PostgreSQL 9.x STIG",
+        "AWS RDS Crunchy Data PostgreSQL 9.x STIG",
+        "Microsoft SQL Server 2014 Database STIG",
+        "AWS RDS Microsoft SQL 2014 Server STIG Instance",
+        "AWS RDS Oracle Database 12c STIG",
+        "Oracle Database 12c STIG",
+        "MongoDB STIG",
+        "AWS CIS Foundations",
+        "AWS S3",
+        "AWS RDS Infrastructure CIS",
+        "Google Cloud Platform PCI-DSS 3.2.1",
+        "Google Cloud Platform CIS Benchmark",
+        "Google Kubernetes Engine CIS Benchmark",
+        "VMWare ESXI 6.7 STIG",
+        "VMware vSphere Virtual Machines version 6.7 STIG",
+        "VMWare ESXI 6.5 STIG",
+        "VMware vCenter Server Appliance 6.7 STIG",
+        "VMware vSphere(ESXi,vCenter,VMs) 7.0 STIG Readiness Guide",
+        "VMware vCenter Service Appliance version 7.0 STIG Readiness Guide",
+        "DRAFT: Apache Tomcat 8 CIS",
+        "DRAFT: Apache Tomcat 7 CIS",
+        "Kubernetes CIS",
+        "Apache Server 2.2 STIG",
+        "Apache Site 2.2 STIG",
+        "AWS RDS Best Practices Benchmark",
+        "AWS S3 Best Practices Benchmark"
+      ],
+      "required": true
+    },
+    "ProfileName": {
+      "type": "enumeration",
+      "enum": [
+        "Red Hat 6 STIG",
+        "Red Hat 7 STIG",
+        "Red Hat CVE Scan",
+        "Windows 2012 STIG",
+        "Windows 2016 STIG",
+        "Windows 2019 STIG",
+        "Docker CE CIS",
+        "Ubuntu 16.04 STIG",
+        "Windows 10 STIG",
+        "RSA Archer 6 SCG",
+        "Red Hat Jboss EAP 6.3 STIG",
+        "JRE 7 STIG",
+        "JRE 8 STIG",
+        "IIS 8.5 Server STIG",
+        "IIS 8.5 Site STIG",
+        "NGINX Baseline",
+        "Oracle MySQL 5.7 CIS",
+        "AWS RDS MySQL 5.7 CIS",
+        "PostgreSQL 9.x STIG",
+        "AWS RDS PostgreSQL 9.x STIG",
+        "MSQL 2014 Database STIG",
+        "MSQL 2014 Instance STIG",
+        "AWS MSQL 2014 STIG",
+        "AWS RDS Oracle Database 12c STIG",
+        "Oracle Database 12c STIG",
+        "MongoDB STIG",
+        "AWS CIS",
+        "AWS S3",
+        "AWS RDS CIS",
+        "GCP PCI-DSS 3.2.1",
+        "GCP CIS Benchmark",
+        "GKE CIS Benchmark",
+        "VMWare ESXI 6.7 STIG",
+        "VMWare vSphere VM 6.7 STIG",
+        "VMWare ESXI 6.5 STIG",
+        "VMWare VCSA 6.7 STIG",
+        "VMWare vSphere 7.0 STIG Readiness Guide",
+        "VMWare VCSA 7.0 STIG Readiness Guide",
+        "DRAFT: Tomcat 8 CIS",
+        "DRAFT: Tomcat 7 CIS",
+        "Kubernetes CIS",
+        "Apache Server 2.2 STIG",
+        "Apache Site 2.2 STIG",
+        "AWS RDS Best Practices Benchmark",
+        "AWS S3 Best Practices Benchmark"
+      ],
+      "required": true
+    },
+    "VersionHistory": {
+      "type": "dynamiczone",
+      "components": [
+        "version-history.cis",
+        "version-history.stig-ready",
+        "version-history.stig",
+        "version-history.vendor"
+      ]
+    }
+  }
+}

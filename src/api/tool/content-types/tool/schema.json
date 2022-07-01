@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tools",
+  "info": {
+    "singularName": "tool",
+    "pluralName": "tools",
+    "displayName": "Tool",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Icon": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Description": {
+      "type": "richtext",
+      "required": true
+    },
+    "LinkIcons": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "ToolLink": {
+      "type": "string",
+      "regex": "(https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|www\\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9]+\\.[^\\s]{2,}|www\\.[a-zA-Z0-9]+\\.[^\\s]{2,})",
+      "required": true
+    },
+    "ToolNames": {
+      "type": "enumeration",
+      "enum": [
+        "SAF CLI",
+        "Heimdall Lite",
+        "Heimdall Server",
+        "SAF CLI GitHub Action",
+        "InSpec Delta",
+        "Serverless InSpec (AWS)",
+        "Serverless Heimdall Pusher (AWS)",
+        "emasser cli",
+        "eMASS Checklist Updater",
+        "Vulcan (alpha)"
+      ],
+      "required": true
+    },
+    "Version": {
+      "type": "string",
+      "regex": "^(\\d+\\.)?(\\d+\\.)?(\\*|\\d+)$",
+      "unique": false,
+      "required": true
+    }
+  }
+}

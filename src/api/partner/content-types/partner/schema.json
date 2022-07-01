@@ -1,0 +1,80 @@
+{
+  "kind": "collectionType",
+  "collectionName": "partners",
+  "info": {
+    "singularName": "partner",
+    "pluralName": "partners",
+    "displayName": "Partners",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "PartnerNameLong": {
+      "type": "string",
+      "required": false,
+      "unique": true
+    },
+    "PartnerLink": {
+      "type": "string",
+      "regex": "(https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|www\\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9]+\\.[^\\s]{2,}|www\\.[a-zA-Z0-9]+\\.[^\\s]{2,})",
+      "required": true,
+      "unique": true
+    },
+    "Icon": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "PartnerName": {
+      "type": "enumeration",
+      "enum": [
+        "MITRE SAF",
+        "DISA",
+        "Google",
+        "VMWare",
+        "Ansible Lockdown",
+        "DOD",
+        "HHS",
+        "US Army",
+        "NGA",
+        "IRS",
+        "CMS",
+        "NRO",
+        "DHS",
+        "US Army INSCOM",
+        "VA",
+        "CDC",
+        "FAA",
+        "Nessus",
+        "elastic",
+        "crunchy data",
+        "Cerner",
+        "SIMP",
+        "GitHub",
+        "SOPHOS"
+      ],
+      "required": true
+    },
+    "PartnerType": {
+      "type": "enumeration",
+      "enum": [
+        "Commercial",
+        "Government",
+        "Open-Source"
+      ],
+      "required": true
+    },
+    "profiles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::profile.profile",
+      "mappedBy": "partner"
+    }
+  }
+}
