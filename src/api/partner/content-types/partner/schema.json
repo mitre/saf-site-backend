@@ -12,11 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "PartnerNameLong": {
-      "type": "string",
-      "required": false,
-      "unique": true
-    },
     "PartnerLink": {
       "type": "string",
       "regex": "(https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|www\\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9]+\\.[^\\s]{2,}|www\\.[a-zA-Z0-9]+\\.[^\\s]{2,})",
@@ -66,7 +61,7 @@
       "enum": [
         "Commercial",
         "Government",
-        "Open-Source"
+        "Open Source"
       ],
       "required": true
     },
@@ -75,6 +70,35 @@
       "relation": "oneToMany",
       "target": "api::profile.profile",
       "mappedBy": "partner"
+    },
+    "PartnerNameLong": {
+      "type": "enumeration",
+      "enum": [
+        "MITRE Security Automation Framework",
+        "Defense Information Systems Agency",
+        "Google Cloud Services",
+        "VMWare",
+        "Ansible Lockdown",
+        "Department of Defense",
+        "Department of Health and Human Services",
+        "United States Army",
+        "National Geospatial-Intelligence Agency",
+        "Internal Revenue Service",
+        "Centers for Medicare & Medicaid Services",
+        "National Reconnaissance Office",
+        "Department of Homeland Security",
+        "United States Army INSCOM",
+        "Department of Veterans Affairs",
+        "Center for Disease Control and Prevention",
+        "Federal Aviation Administration",
+        "Nessus",
+        "elastic",
+        "crunchy data",
+        "Cerner",
+        "SIMP",
+        "GitHub",
+        "SOPHOS"
+      ]
     }
   }
 }

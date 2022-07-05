@@ -113,5 +113,9 @@ exports
 build
 .strapi-updater.json
 
+############################
+# Develop
+############################
 
+nd-strapi/config/database.js
 config/database.js
