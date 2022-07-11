@@ -1,6 +1,6 @@
 # SAF Site Backend
 
-This repository contains the source code for the upcomming new https://saf.mitre.org website.
+This repository contains the source code for the upcomming new https://saf.mitre.org website
 
 ## Contributing, Issues and Support
 
