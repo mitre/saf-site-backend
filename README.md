@@ -1,8 +1,36 @@
-# SAF Site Backend
+# MITRE SAF Site - Backend
+
+MITRE Security Automation Framework Website
+
+Version 0.0.0
+
+### Show some :heart: and star the repo to support the project 
+  
+## Overview
+
+The MITRE Security Automation Framework (SAF) brings together open-source, accessible applications, techniques, libraries, and tools developed by MITRE and the community to streamline security automation for Systems and in DevOps pipelines. 
 
 This repository contains the source code for the upcomming new https://saf.mitre.org website
 
-## Contributing, Issues and Support
+# Getting Started
+
+## Backend Development
+
+1. [Fork repository](https://github.com/mitre/saf-site-backend) and clone it locally
+2. Install project dependencies: `npm install`
+3. Install Yarn: `yarn install`
+4. For developing use: `yarn develop`
+5. For production use: `yarn build` and `yarn start` 
+
+## Frontend Development
+- Frontend is handled in the [saf-site frontend repository](https://github.com/mitre/saf-site)
+
+## Technology Stack
+
+- [Strapi](https://strapi.io/)
+- [Postgres](https://www.postgresql.org/)
+
+# Contributing, Issues and Support
 
 ### Contributing
 
