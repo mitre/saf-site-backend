@@ -1,10 +1,6 @@
 # MITRE SAF Site - Backend
 
 MITRE Security Automation Framework Website
-
-Version 0.0.0
-
-### Show some :heart: and star the repo to support the project 
   
 ## Overview
 
