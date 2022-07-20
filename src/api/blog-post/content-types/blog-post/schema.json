@@ -32,11 +32,6 @@
     "PublishDate": {
       "type": "datetime"
     },
-    "isApproved": {
-      "type": "boolean",
-      "default": false,
-      "required": true
-    },
     "Title": {
       "type": "string",
       "required": true
