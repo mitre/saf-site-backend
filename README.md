@@ -18,7 +18,15 @@ This repository contains the source code for the upcomming new https://saf.mitre
 4. For developing use: `yarn develop`
 5. For production use: `yarn build` and `yarn start` 
 
-NOTE: To develop using the strapi admin panel you must **locally** change your `config/database.js` 
+NOTE: To develop using the strapi admin panel you must,
+
+- Set up Postgres Database **locally**
+  1. Have [Postgres](https://www.postgresql.org/docs/current/tutorial-install.html) installed and running on local machine. 
+  2. Create your Postgres user
+  3. [Create a database](https://www.postgresql.org/docs/current/tutorial-createdb.html) named `strapi`
+
+
+- **locally** change your `config/database.js` 
 ```js
 const parse = require('pg-connection-string').parse;
 const config = parse("postgres://postgres@127.0.0.1:5432/strapi");
@@ -39,8 +47,10 @@ module.exports = ({ env }) => ({
 });
 ```
 
+
+
 ## Frontend Development
-- Frontend is handled in the [saf-site frontend repository](https://github.com/mitre/saf-site)
+- Frontend is handled in the [saf-site frontend repository](https://github.com/mitre/saf-site) 
 
 ## Technology Stack
 
