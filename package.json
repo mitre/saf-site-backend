@@ -9,8 +9,8 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
   "dependencies": {
+    "@strapi/plugin-graphql": "^4.2.3",
     "@strapi/plugin-i18n": "4.1.2",
     "@strapi/plugin-users-permissions": "4.1.2",
     "@strapi/provider-upload-cloudinary": "^4.1.2",
