@@ -12,15 +12,17 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Tag": {
-      "type": "string"
+    "category": {
+      "type": "string",
+      "required": true
     },
-    "Content": {
-      "type": "richtext"
+    "content": {
+      "type": "richtext",
+      "required": true
     },
-    "Image": {
+    "image": {
       "type": "media",
-      "multiple": false,
+      "multiple": true,
       "required": false,
       "allowedTypes": [
         "images",
@@ -29,10 +31,18 @@
         "audios"
       ]
     },
-    "PublishDate": {
-      "type": "datetime"
+    "date": {
+      "type": "date"
     },
-    "Title": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "author": {
       "type": "string",
       "required": true
     }

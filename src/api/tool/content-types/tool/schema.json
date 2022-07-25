@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Icon": {
+    "icon": {
       "type": "media",
       "multiple": false,
       "required": true,
@@ -20,11 +20,11 @@
         "images"
       ]
     },
-    "Description": {
+    "description": {
       "type": "richtext",
       "required": true
     },
-    "LinkIcons": {
+    "link_icons": {
       "type": "media",
       "multiple": true,
       "required": true,
@@ -32,12 +32,12 @@
         "images"
       ]
     },
-    "ToolLink": {
+    "tool_link": {
       "type": "string",
       "regex": "(https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|www\\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9]+\\.[^\\s]{2,}|www\\.[a-zA-Z0-9]+\\.[^\\s]{2,})",
       "required": true
     },
-    "ToolNames": {
+    "tool_names": {
       "type": "enumeration",
       "enum": [
         "SAF CLI",
@@ -53,7 +53,7 @@
       ],
       "required": true
     },
-    "Version": {
+    "version": {
       "type": "string",
       "regex": "^(\\d+\\.)?(\\d+\\.)?(\\*|\\d+)$",
       "unique": false,

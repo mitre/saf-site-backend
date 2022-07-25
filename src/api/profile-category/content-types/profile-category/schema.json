@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Category": {
+    "category": {
       "type": "enumeration",
       "enum": [
         "Cloud Service Providers",

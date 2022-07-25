@@ -24,7 +24,7 @@
       "target": "api::platform.platform",
       "inversedBy": "profiles"
     },
-    "Type": {
+    "type": {
       "type": "enumeration",
       "enum": [
         "Harden",
@@ -32,7 +32,7 @@
       ],
       "required": true
     },
-    "ProfileURL": {
+    "profile_url": {
       "type": "string",
       "regex": "(https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|www\\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9]+\\.[^\\s]{2,}|www\\.[a-zA-Z0-9]+\\.[^\\s]{2,})",
       "required": true
@@ -43,7 +43,7 @@
       "target": "api::profile-category.profile-category",
       "inversedBy": "profiles"
     },
-    "ProfileNameLong": {
+    "profile_name_long": {
       "type": "enumeration",
       "enum": [
         "Red Hat 6 STIG",
@@ -93,7 +93,7 @@
       ],
       "required": true
     },
-    "ProfileName": {
+    "profile_name": {
       "type": "enumeration",
       "enum": [
         "Red Hat 6 STIG",
@@ -144,7 +144,7 @@
       ],
       "required": true
     },
-    "VersionHistory": {
+    "version_history": {
       "type": "dynamiczone",
       "components": [
         "version-history.cis",

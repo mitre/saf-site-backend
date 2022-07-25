@@ -1,40 +1,17 @@
-// const path = require("path");
+const parse = require('pg-connection-string').parse;
+const config = parse("postgres://postgres@127.0.0.1:5432/strapi");
 
-const { parse } = require("pg-connection-string");
-
-module.exports = ({ env }) => {
-  const { host, port, database, user, password } = parse(env("DATABASE_URL"));
-
-  return {
+module.exports = ({ env }) => ({
+  connection: {
+    client: 'postgres',
     connection: {
-      client: "postgres",
-      connection: {
-        host,
-        port,
-        database,
-        user,
-        password,
-        schema: env("DATABASE_SCHEMA", "public"), // Not required
-        ssl: {
-          rejectUnauthorized: env.bool("DATABASE_SSL_SELF", false), // For self-signed certificates
-        },
-      },
-      debug: false,
+      host: config.host,
+      port: config.port,
+      database: config.database,
+      user: config.user,
+      password: config.password,
+      ssl: false
     },
-  };
-};
-
-// Use this configuration for an SQLite database on your machine.
-// module.exports = ({ env }) => ({
-//   connection: {
-//     client: "sqlite",
-//     connection: {
-//       filename: path.join(
-//         __dirname,
-//         "..",
-//         env("DATABASE_FILENAME", ".tmp/data.db")
-//       ),
-//     },
-//     useNullAsDefault: true,
-//   },
-// });
+    debug: false,
+  },
+});
