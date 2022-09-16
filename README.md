@@ -13,10 +13,9 @@ This repository contains the source code for the upcomming new https://saf.mitre
 ## Backend Development
 
 1. [Fork repository](https://github.com/mitre/saf-site-backend) and clone it locally
-2. Install project dependencies: `npm install`
-3. Install Yarn: `yarn install`
-4. For developing use: `yarn develop`
-5. For production use: `yarn build` and `yarn start` 
+2. Install project dependencies: `yarn install`
+3. For developing use: `yarn dev`
+4. For production use: `yarn build` and `yarn start` 
 
 NOTE: To develop using the strapi admin panel you must,
 
