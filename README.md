@@ -28,7 +28,8 @@ NOTE: To develop using the strapi admin panel you must,
 - **locally** change your `config/database.js` 
 ```js
 const parse = require('pg-connection-string').parse;
-const config = parse("postgres://postgres@127.0.0.1:5432/strapi");
+const config = parse("DATABASE_URL");
+// Set DATABASE_URL local variable to postgres database url
 
 module.exports = ({ env }) => ({
   connection: {
