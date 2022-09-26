@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "documentations",
+  "info": {
+    "singularName": "documentation",
+    "pluralName": "documentations",
+    "displayName": "Documentation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "section_title": {
+      "type": "string"
+    },
+    "subsections": {
+      "displayName": "Subsections",
+      "type": "component",
+      "repeatable": true,
+      "component": "subsections.subsections"
+    }
+  }
+}
