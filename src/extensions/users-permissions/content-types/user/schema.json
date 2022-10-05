@@ -63,9 +63,6 @@
       "inversedBy": "users",
       "configurable": false
     },
-    "description": {
-      "type": "text"
-    },
     "photo": {
       "type": "media",
       "multiple": false,
@@ -86,6 +83,26 @@
     },
     "jobTitle": {
       "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "linkedIn": {
+      "type": "string",
+      "unique": false
+    },
+    "twitter": {
+      "type": "string",
+      "unique": false
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "displayEmail": {
+      "type": "email"
     }
   }
 }
