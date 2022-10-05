@@ -83,6 +83,9 @@
       "enum": [
         "Saf Team"
       ]
+    },
+    "jobTitle": {
+      "type": "string"
     }
   }
 }
