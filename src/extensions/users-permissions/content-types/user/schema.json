@@ -84,7 +84,7 @@
     "jobTitle": {
       "type": "string"
     },
-    "Description": {
+    "description": {
       "type": "richtext"
     },
     "linkedIn": {

@@ -12,24 +12,9 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "category": {
-      "type": "string",
-      "required": true
-    },
     "content": {
       "type": "richtext",
       "required": true
-    },
-    "image": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
     },
     "date": {
       "type": "date"
@@ -42,14 +27,19 @@
       "type": "text",
       "required": true
     },
-    "author": {
-      "type": "string",
-      "required": true
-    },
     "users_permissions_user": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Test",
+        "Training",
+        "Docs",
+        "News"
+      ]
     }
   }
 }
