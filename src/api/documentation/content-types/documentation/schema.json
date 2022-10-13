@@ -8,18 +8,25 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
     "section_title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "subsections": {
       "displayName": "Subsections",
       "type": "component",
       "repeatable": true,
-      "component": "subsections.subsections"
+      "component": "subsections.subsections",
+      "required": true
+    },
+    "order_id": {
+      "type": "biginteger",
+      "required": true,
+      "min": "0"
     }
   }
 }
