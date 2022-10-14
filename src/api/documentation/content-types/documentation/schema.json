@@ -24,9 +24,8 @@
       "required": true
     },
     "order_id": {
-      "type": "biginteger",
-      "required": true,
-      "min": "0"
+      "type": "integer",
+      "required": true
     }
   }
 }
