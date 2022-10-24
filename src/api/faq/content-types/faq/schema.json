@@ -13,10 +13,12 @@
   "pluginOptions": {},
   "attributes": {
     "question": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "answer": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     }
   }
 }
