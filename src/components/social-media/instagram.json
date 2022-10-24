@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_social_media_instagrams",
+  "info": {
+    "displayName": "Instagram",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "ProfileLink": {
+      "type": "string",
+      "regex": "https?:\\/\\/(?:www\\.|(?!www))instagram\\.[^\\s]{2,}"
+    }
+  }
+}

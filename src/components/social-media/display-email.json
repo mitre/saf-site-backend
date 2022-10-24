@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_social_media_display_emails",
+  "info": {
+    "displayName": "DisplayEmail"
+  },
+  "options": {},
+  "attributes": {
+    "DisplayEmail": {
+      "type": "email"
+    }
+  }
+}
