@@ -73,13 +73,16 @@
     },
     "name": {
       "type": "string",
-      "unique": true
+      "unique": true,
+      "required": true
     },
     "jobTitle": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "description": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "partner": {
       "type": "relation",
@@ -96,7 +99,8 @@
         "social-media.linked-in",
         "social-media.twitter",
         "social-media.other"
-      ]
+      ],
+      "max": 5
     }
   }
 }
