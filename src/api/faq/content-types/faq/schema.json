@@ -19,6 +19,17 @@
     "answer": {
       "type": "richtext",
       "required": true
+    },
+    "author": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "question_number": {
+      "type": "integer",
+      "required": true,
+      "min": 1,
+      "unique": true
     }
   }
 }
