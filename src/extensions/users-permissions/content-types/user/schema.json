@@ -73,36 +73,34 @@
     },
     "name": {
       "type": "string",
-      "unique": true
-    },
-    "company": {
-      "type": "enumeration",
-      "enum": [
-        "Saf Team"
-      ]
+      "unique": true,
+      "required": true
     },
     "jobTitle": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "description": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
-    "linkedIn": {
-      "type": "string",
-      "unique": false
+    "partner": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::partner.partner"
     },
-    "twitter": {
-      "type": "string",
-      "unique": false
-    },
-    "facebook": {
-      "type": "string"
-    },
-    "instagram": {
-      "type": "string"
-    },
-    "displayEmail": {
-      "type": "email"
+    "SocialMedia": {
+      "type": "dynamiczone",
+      "components": [
+        "social-media.display-email",
+        "social-media.facebook",
+        "social-media.git-hub",
+        "social-media.instagram",
+        "social-media.linked-in",
+        "social-media.twitter",
+        "social-media.other"
+      ],
+      "max": 5
     }
   }
 }

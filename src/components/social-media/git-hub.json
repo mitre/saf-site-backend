@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_social_media_git_hubs",
+  "info": {
+    "displayName": "GitHub"
+  },
+  "options": {},
+  "attributes": {
+    "ProfileLink": {
+      "type": "string"
+    }
+  }
+}
