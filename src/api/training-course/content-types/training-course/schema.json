@@ -12,27 +12,23 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
     "description": {
       "type": "richtext",
       "required": true
     },
-    "course_name": {
-      "type": "enumeration",
-      "enum": [
-        "Inspec Profile Developer Course",
-        "Inspec Advanced Developer Course"
-      ],
-      "required": true
-    },
-    "course_recording": {
+    "recording": {
       "type": "string",
       "regex": "(https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|www\\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9]+\\.[^\\s]{2,}|www\\.[a-zA-Z0-9]+\\.[^\\s]{2,})",
-      "required": true
+      "required": false
     },
-    "course_resources": {
+    "materials": {
       "type": "string",
-      "regex": "(https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|www\\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9]+\\.[^\\s]{2,}|www\\.[a-zA-Z0-9]+\\.[^\\s]{2,})",
-      "required": true
+      "required": false
     }
   }
 }
