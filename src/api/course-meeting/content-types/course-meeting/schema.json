@@ -22,7 +22,8 @@
       "required": true
     },
     "index": {
-      "type": "integer"
+      "type": "integer",
+      "required": true
     },
     "link": {
       "type": "string",
