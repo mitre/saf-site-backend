@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * benchmark router
+ * guidance router
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::benchmark.benchmark');
+module.exports = createCoreRouter('api::guidance.guidance');

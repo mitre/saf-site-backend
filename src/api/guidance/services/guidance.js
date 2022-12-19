@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * benchmark service
+ * guidance service
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::benchmark.benchmark');
+module.exports = createCoreService('api::guidance.guidance');

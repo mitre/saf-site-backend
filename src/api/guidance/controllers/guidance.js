@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * benchmark controller
+ * guidance controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::benchmark.benchmark');
+module.exports = createCoreController('api::guidance.guidance');
