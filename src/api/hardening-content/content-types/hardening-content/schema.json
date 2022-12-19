@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hardening_contents",
+  "info": {
+    "singularName": "hardening-content",
+    "pluralName": "hardening-contents",
+    "displayName": "HardeningContent",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "name_long": {
+      "type": "string"
+    },
+    "platform": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::platform.platform",
+      "inversedBy": "hardening_contents"
+    },
+    "partner": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::partner.partner",
+      "inversedBy": "hardening_contents"
+    }
+  }
+}

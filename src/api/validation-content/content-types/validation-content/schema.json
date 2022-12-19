@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "validation_contents",
+  "info": {
+    "singularName": "validation-content",
+    "pluralName": "validation-contents",
+    "displayName": "ValidationContent",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "name_long": {
+      "type": "string"
+    },
+    "partner": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::partner.partner",
+      "inversedBy": "validation_contents"
+    },
+    "platform": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::platform.platform",
+      "inversedBy": "validation_contents"
+    }
+  }
+}

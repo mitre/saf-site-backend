@@ -6,25 +6,9 @@
   },
   "options": {},
   "attributes": {
-    "ProfileVersion": {
-      "type": "string",
-      "required": true,
-      "regex": "^(\\d+\\.)?(\\d+\\.)?(\\*|\\d+)$"
-    },
-    "GuidanceVersion": {
+    "version": {
       "type": "string",
       "regex": "v[0-9]+r[0-9]+"
-    },
-    "VersionDate": {
-      "type": "date"
-    },
-    "GudianceLink": {
-      "type": "string",
-      "regex": "(https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|www\\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9]+\\.[^\\s]{2,}|www\\.[a-zA-Z0-9]+\\.[^\\s]{2,})"
-    },
-    "ProfileRepo": {
-      "type": "string",
-      "regex": "(https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|www\\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9]+\\.[^\\s]{2,}|www\\.[a-zA-Z0-9]+\\.[^\\s]{2,})"
     }
   }
 }

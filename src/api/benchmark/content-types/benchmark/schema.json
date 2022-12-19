@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "benchmarks",
+  "info": {
+    "singularName": "benchmark",
+    "pluralName": "benchmarks",
+    "displayName": "Benchmark",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Stig",
+        "Cis",
+        "Vendor Best Practice",
+        "Stig-Ready"
+      ],
+      "required": true
+    },
+    "date": {
+      "type": "date"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Cloud Service Providers",
+        "Virtual Platforms",
+        "Operating Systems",
+        "Databases",
+        "Network",
+        "Application Logic",
+        "Web Servers"
+      ]
+    },
+    "hardening": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::hardening-content.hardening-content"
+    },
+    "source_link": {
+      "type": "string"
+    },
+    "validation": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::validation-content.validation-content"
+    },
+    "version": {
+      "type": "dynamiczone",
+      "components": [
+        "version-history.cis",
+        "version-history.stig-ready",
+        "version-history.stig",
+        "version-history.vendor"
+      ],
+      "required": true
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}
