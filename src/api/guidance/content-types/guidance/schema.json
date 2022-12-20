@@ -53,7 +53,7 @@
       "relation": "oneToMany",
       "target": "api::hardening-content.hardening-content"
     },
-    "validations": {
+    "validation": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::validation-content.validation-content"
