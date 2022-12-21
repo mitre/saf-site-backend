@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * profile router.
+ * guidance router
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::profile.profile');
+module.exports = createCoreRouter('api::guidance.guidance');

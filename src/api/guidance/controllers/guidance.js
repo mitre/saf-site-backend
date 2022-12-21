@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- *  profile controller
+ * guidance controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::profile.profile');
+module.exports = createCoreController('api::guidance.guidance');

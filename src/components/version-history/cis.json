@@ -6,24 +6,9 @@
   },
   "options": {},
   "attributes": {
-    "GuidanceVersion": {
+    "version": {
       "type": "string",
       "regex": "^(\\d+\\.)?(\\*|\\d+)$"
-    },
-    "ProfileVersion": {
-      "type": "string",
-      "regex": "^(\\d+\\.)?(\\d+\\.)?(\\*|\\d+)$"
-    },
-    "GuidanceLink": {
-      "type": "string",
-      "regex": "(https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|www\\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9]+\\.[^\\s]{2,}|www\\.[a-zA-Z0-9]+\\.[^\\s]{2,})"
-    },
-    "ProfileRepo": {
-      "type": "string",
-      "regex": "(https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|www\\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9]+\\.[^\\s]{2,}|www\\.[a-zA-Z0-9]+\\.[^\\s]{2,})"
-    },
-    "VersionDate": {
-      "type": "date"
     }
   }
 }

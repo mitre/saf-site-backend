@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "guidances",
+  "info": {
+    "singularName": "guidance",
+    "pluralName": "guidances",
+    "displayName": "Guidance",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "source": {
+      "type": "string",
+      "regex": "(https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|www\\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9]+\\.[^\\s]{2,}|www\\.[a-zA-Z0-9]+\\.[^\\s]{2,})",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Stig",
+        "Cis",
+        "Vendor Best Practice",
+        "Stig-Ready"
+      ],
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Cloud Service Providers",
+        "Virtual Platforms",
+        "Operating Systems",
+        "Databases",
+        "Network",
+        "Application Logic",
+        "Web Servers"
+      ],
+      "required": true
+    },
+    "hardening": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::hardening-content.hardening-content"
+    },
+    "validation": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::validation-content.validation-content"
+    },
+    "version": {
+      "type": "dynamiczone",
+      "components": [
+        "version-history.cis",
+        "version-history.stig-ready",
+        "version-history.stig",
+        "version-history.vendor"
+      ],
+      "required": true
+    }
+  }
+}
