@@ -8,7 +8,8 @@
   "attributes": {
     "version": {
       "type": "string",
-      "regex": "^(\\d+\\.)?(\\*|\\d+)$"
+      "regex": "v[\\d]{1,2}.[\\d]{1,2}.[\\d]{1,2}",
+      "required": false
     }
   }
 }

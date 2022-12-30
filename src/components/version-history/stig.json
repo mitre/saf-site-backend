@@ -8,7 +8,7 @@
   "attributes": {
     "version": {
       "type": "string",
-      "regex": "v[0-9]+r[0-9]+"
+      "regex": "v[\\d]{1,2}r[\\d]{1,2}"
     }
   }
 }
