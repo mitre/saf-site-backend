@@ -13,13 +13,16 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "source": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "name_long": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "partner": {
       "type": "relation",

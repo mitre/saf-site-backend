@@ -28,10 +28,11 @@
     "type": {
       "type": "enumeration",
       "enum": [
-        "Stig",
-        "Cis",
+        "STIG",
+        "CIS",
         "Vendor Best Practice",
-        "Stig-Ready"
+        "STIG-Ready",
+        "Other"
       ],
       "required": true
     },
