@@ -7,8 +7,7 @@
   "options": {},
   "attributes": {
     "version": {
-      "type": "string",
-      "regex": "^(\\d+\\.)?(\\d+\\.)?(\\*|\\d+)$"
+      "type": "string"
     }
   }
 }
