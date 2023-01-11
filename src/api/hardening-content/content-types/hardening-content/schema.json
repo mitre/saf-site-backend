@@ -35,6 +35,9 @@
       "relation": "manyToOne",
       "target": "api::partner.partner",
       "inversedBy": "hardening_contents"
+    },
+    "code_last_updated": {
+      "type": "date"
     }
   }
 }

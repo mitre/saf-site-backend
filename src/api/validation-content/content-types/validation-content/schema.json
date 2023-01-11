@@ -35,6 +35,9 @@
       "relation": "manyToOne",
       "target": "api::platform.platform",
       "inversedBy": "validation_contents"
+    },
+    "code_last_updated": {
+      "type": "date"
     }
   }
 }
