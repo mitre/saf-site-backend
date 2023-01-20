@@ -6,51 +6,51 @@ MITRE Security Automation Framework Website
 
 The MITRE Security Automation Framework (SAF) brings together open-source, accessible applications, techniques, libraries, and tools developed by MITRE and the community to streamline security automation for Systems and in DevOps pipelines. 
 
-This repository contains the source code for the upcomming new https://saf.mitre.org website
+This repository contains the source code for the upcoming new https://saf.mitre.org website
 
-# Getting Started
+# Getting Started / Installation
 
 ## Backend Development
 
-1. [Fork repository](https://github.com/mitre/saf-site-backend) and clone it locally
-2. Install project dependencies: `yarn install`
-3. For developing use: `yarn dev`
-4. For production use: `yarn build` and `yarn start` 
-
-NOTE: To develop using the strapi admin panel you must,
-
-- Set up Postgres Database **locally**
-  1. Have [Postgres](https://www.postgresql.org/docs/current/tutorial-install.html) installed and running on local machine. 
-  2. Create your Postgres user
-  3. [Create a database](https://www.postgresql.org/docs/current/tutorial-createdb.html) named `strapi`
-
-
-- **locally** change your `config/database.js` 
-```js
-const parse = require('pg-connection-string').parse;
-const config = parse("DATABASE_URL");
-// Set DATABASE_URL local variable to postgres database url
-
-module.exports = ({ env }) => ({
-  connection: {
-    client: 'postgres',
-    connection: {
-      host: config.host,
-      port: config.port,
-      database: config.database,
-      user: config.user,
-      password: config.password,
-      ssl: false
-    },
-    debug: false,
-  },
-});
-```
+1. Clone this repository:
+    ```
+    git clone https://github.com/mitre/saf-site-backend.git
+    ```
+2. Install project dependencies:
+    ```
+    yarn install
+    ```
+3. Set up Postgres database locally
+   - Install [Postgres](https://www.postgresql.org/docs/current/tutorial-install.html) and start service on local machine. 
+   - Create your Postgres user and database (Replace `CHANGEME_?` values below):
+     - In shell (Linux):
+        ```
+        sudo su - postgres
+        createuser CHANGEME_USER
+        createdb CHANGEME_DB_NAME
+        psql
+        ```
+     - In psql prompt (after running `psql`):
+        ```
+        alter user CHANGEME_USER  with encrypted password 'CHANGEME_PASSWORD';
+        grant all privileges on database CHANGEME_DB_NAME to CHANGEME_USER 
+        ```
 
 
+4. Copy `.env-sample` into `.env` and replace `CHANGEME` values as appropriate
+5. Launch application:
+   - For development:
+      ```
+      yarn dev
+      ```
+   - For production:
+      ```
+      yarn build
+      yarn start
+      ```
 
 ## Frontend Development
-- Frontend is handled in the [saf-site frontend repository](https://github.com/mitre/saf-site) 
+For frontend development make sure to check out the [saf-site frontend repository](https://github.com/mitre/saf-site-frontend) 
 
 ## Technology Stack
 
@@ -65,7 +65,7 @@ Please feel free to look through our issues, make a fork and submit PRs and impr
 
 ### Issues and Support
 
-Please feel free to contact us by **opening an issue** on the issue board, or, at [saf@mitre.org](mailto:saf@mitre.org) should you have any suggestions, questions or issues.
+Please feel free to contact us by **opening an issue** on the issue board, or, at [saf@groups.mitre.org](mailto:saf@groups.mitre.org) should you have any suggestions, questions or issues.
 
 ### NOTICE
 
