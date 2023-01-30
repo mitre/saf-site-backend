@@ -1,27 +1,24 @@
 # MITRE SAF Site - Backend
-
-MITRE Security Automation Framework Website
   
 ## Overview
 
-The MITRE Security Automation Framework (SAF) brings together open-source, accessible applications, techniques, libraries, and tools developed by MITRE and the community to streamline security automation for Systems and in DevOps pipelines. 
+The MITRE Security Automation Framework (MITRE SAF©) brings together open-source, accessible applications, techniques, libraries, and tools developed by MITRE and the community to streamline security automation for Systems and in DevOps pipelines. 
 
-This repository contains the source code for the upcomming new https://saf.mitre.org website
+This repository contains the source code for the upcoming new https://saf.mitre.org website's backend content management system.
 
-# Getting Started
+## Technology Stack
 
-## Backend Development
+- Strapi
+- Postgres
+
+## Launching the Strapi admin console for local content building
 
 1. [Fork repository](https://github.com/mitre/saf-site-backend) and clone it locally
 2. Install project dependencies: `yarn install`
-3. For developing use: `yarn dev`
-4. For production use: `yarn build` and `yarn start` 
+3. Configure a local PostgreSQL database:
 
-NOTE: To develop using the strapi admin panel you must,
-
-- Set up Postgres Database **locally**
-  1. Have [Postgres](https://www.postgresql.org/docs/current/tutorial-install.html) installed and running on local machine. 
-  2. Create your Postgres user
+- Set up PostgreSQL Database **locally**
+  1. Have [PostgreSQL](https://www.postgresql.org/docs/current/tutorial-install.html) installed and running on local machine.
   3. [Create a database](https://www.postgresql.org/docs/current/tutorial-createdb.html) named `strapi`
 
 
@@ -29,7 +26,7 @@ NOTE: To develop using the strapi admin panel you must,
 ```js
 const parse = require('pg-connection-string').parse;
 const config = parse("DATABASE_URL");
-// Set DATABASE_URL local variable to postgres database url
+// Set DATABASE_URL local variable to postgres database url -- usually `postgres://localhost:5432/strapi`
 
 module.exports = ({ env }) => ({
   connection: {
@@ -47,7 +44,7 @@ module.exports = ({ env }) => ({
 });
 ```
 
-
+A
 
 ## Frontend Development
 - Frontend is handled in the [saf-site frontend repository](https://github.com/mitre/saf-site) 
