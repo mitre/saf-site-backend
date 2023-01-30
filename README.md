@@ -6,27 +6,21 @@ The MITRE Security Automation Framework (MITRE SAF©) brings together open-sourc
 
 This repository contains the source code for the upcoming new https://saf.mitre.org website's backend content management system.
 
-## Technology Stack
-
-- Strapi
-- Postgres
-
 ## Launching the Strapi admin console for local content building
 
 1. [Fork repository](https://github.com/mitre/saf-site-backend) and clone it locally
-2. Install project dependencies: `yarn install`
-3. Configure a local PostgreSQL database:
+2. Change directory to `saf-site-backend` and checkout a new feature branch: `cd saf-site-backend && git checkout -b my-edits` 
+3. Install project dependencies: `yarn install`
+4. Configure a local PostgreSQL database:
+    - Have [PostgreSQL](https://www.postgresql.org/docs/current/tutorial-install.html) installed and running on your local machine
+    - [Create a database](https://www.postgresql.org/docs/current/tutorial-createdb.html): `createdb strapi`
 
-- Set up PostgreSQL Database **locally**
-  1. Have [PostgreSQL](https://www.postgresql.org/docs/current/tutorial-install.html) installed and running on local machine.
-  3. [Create a database](https://www.postgresql.org/docs/current/tutorial-createdb.html) named `strapi`
 
-
-- **locally** change your `config/database.js` 
+5. Change your `config/database.js` to reference the local database you just created.
 ```js
 const parse = require('pg-connection-string').parse;
 const config = parse("DATABASE_URL");
-// Set DATABASE_URL local variable to postgres database url -- usually `postgres://localhost:5432/strapi`
+// Set DATABASE_URL local variable to postgres database connection string -- ex. `postgres://localhost:5432/strapi`
 
 module.exports = ({ env }) => ({
   connection: {
@@ -44,15 +38,28 @@ module.exports = ({ env }) => ({
 });
 ```
 
-A
+6. Run the server: `yarn dev`
+
+The Strapi admin console should now be available at `http://localhost:1337/admin`. You can use the admin console to edit content types (i.e. database schema edits).
+
+7. Once your edits are complete, push the changes:
+``` bash
+git add .
+git commit -s -m "My Edits"
+git push origin my-edits
+```
+
+Head back to GitHub and open a pull request for your feature branch. Once reviewed, it will be pulled into `main` branch and deployed to the production Heroku server.
+
+NOTE: Local development allows for modifying the database *schema*, but any new *content* you add to your local PostgreSQL database will not be preserved and must be replicated on the production Heroku database.
 
 ## Frontend Development
-- Frontend is handled in the [saf-site frontend repository](https://github.com/mitre/saf-site) 
+- Frontend is handled in the [saf-site-frontend repository](https://github.com/mitre/saf-site). You can tweak the frontend's configuration to point to your local Strapi database for local development.
 
 ## Technology Stack
 
 - [Strapi](https://strapi.io/)
-- [Postgres](https://www.postgresql.org/)
+- [PostgreSQL](https://www.postgresql.org/)
 
 # Contributing, Issues and Support
 
