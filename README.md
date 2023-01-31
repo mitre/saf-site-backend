@@ -1,16 +1,14 @@
 # MITRE SAF Site - Backend
-
-MITRE Security Automation Framework Website
   
 ## Overview
 
-The MITRE Security Automation Framework (SAF) brings together open-source, accessible applications, techniques, libraries, and tools developed by MITRE and the community to streamline security automation for Systems and in DevOps pipelines. 
+The MITRE Security Automation Framework (MITRE SAF©) brings together open-source, accessible applications, techniques, libraries, and tools developed by MITRE and the community to streamline security automation for Systems and in DevOps pipelines. 
 
-This repository contains the source code for the upcoming new https://saf.mitre.org website
+This repository contains the source code for the upcoming new https://saf.mitre.org website's backend content management system.
 
 # Getting Started / Installation
 
-## Backend Development
+## Launching the Strapi admin console for local content building
 
 1. Clone this repository:
     ```
@@ -49,13 +47,29 @@ This repository contains the source code for the upcoming new https://saf.mitre.
       yarn start
       ```
 
+
+The Strapi admin console should now be available at `http://localhost:1337/admin`. You can use the admin console to edit content types (i.e. database schema edits).
+
+## Applying Edits For Production
+Once your edits are complete, push the changes:
+``` bash
+git add .
+git commit -s -m "My Edits"
+git push origin my-edits
+```
+
+Head back to GitHub and open a pull request for your feature branch. Once reviewed, it will be pulled into `main` branch and deployed to the production Heroku server.
+
+NOTE: Local development allows for modifying the database *schema*, but any new *content* you add to your local PostgreSQL database will not be preserved and must be replicated on the production Heroku database.
+
 ## Frontend Development
-For frontend development make sure to check out the [saf-site frontend repository](https://github.com/mitre/saf-site-frontend) 
+- Frontend is handled in the [saf-site-frontend repository](https://github.com/mitre/saf-site). You can tweak the frontend's configuration to point to your local Strapi database for local development.
+
 
 ## Technology Stack
 
 - [Strapi](https://strapi.io/)
-- [Postgres](https://www.postgresql.org/)
+- [PostgreSQL](https://www.postgresql.org/)
 
 # Contributing, Issues and Support
 

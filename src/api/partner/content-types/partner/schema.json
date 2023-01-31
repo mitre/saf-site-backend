@@ -45,6 +45,14 @@
       "relation": "oneToMany",
       "target": "api::validation-content.validation-content",
       "mappedBy": "partner"
+    },
+    "community": {
+      "type": "enumeration",
+      "enum": [
+        "sponsor",
+        "vendor"
+      ],
+      "required": false
     }
   }
 }
