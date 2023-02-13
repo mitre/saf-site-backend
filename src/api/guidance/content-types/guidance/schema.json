@@ -18,7 +18,7 @@
     },
     "date": {
       "type": "date",
-      "required": true
+      "required": false
     },
     "source": {
       "type": "string",
@@ -67,7 +67,7 @@
         "version-history.stig",
         "version-history.vendor"
       ],
-      "required": true
+      "required": false
     }
   }
 }
