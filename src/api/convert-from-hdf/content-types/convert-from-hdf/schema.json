@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "convert_from_hdfs",
+  "info": {
+    "singularName": "convert-from-hdf",
+    "pluralName": "convert-from-hdfs",
+    "displayName": "ConvertFromHDF"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "href": {
+      "type": "string"
+    }
+  }
+}
