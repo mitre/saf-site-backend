@@ -17,7 +17,7 @@
     "@strapi/provider-upload-cloudinary": "^4.6.1",
     "@strapi/strapi": "^4.6.1",
     "fs": "^0.0.1-security",
-    "pg": "^8.7.3",
+    "pg": "^8.9.0",
     "pg-connection-string": "^2.5.0",
     "sqlite3": "5.0.3",
     "uuidv4": "^6.2.12"
