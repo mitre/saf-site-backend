@@ -1,8 +1,7 @@
 {
-  "name": "my-project",
-  "private": true,
-  "version": "0.1.0",
-  "description": "A Strapi application",
+  "name": "saf-site-backend",
+  "description": "The MITRE Security Automation Framework© (SAF) brings together open-source, accessible applications, techniques, libraries, and tools developed by MITRE and the security community to streamline security automation for systems and DevOps pipelines.",
+  "version": "1.0.0",
   "scripts": {
     "dev": "strapi develop",
     "start": "strapi start",
@@ -22,9 +21,6 @@
     "sqlite3": "5.0.3",
     "uuidv4": "^6.2.12"
   },
-  "author": {
-    "name": "A Strapi developer"
-  },
   "strapi": {
     "uuid": "61e8a3da-dbc1-4656-ba9a-d9c78e99ef5c"
   },
@@ -32,5 +28,5 @@
     "node": ">=12.x.x <=16.x.x",
     "npm": ">=6.0.0"
   },
-  "license": "MIT"
+  "license": "Apache-2.0"
 }
