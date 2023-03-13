@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "framework_pages",
+  "info": {
+    "singularName": "framework-page",
+    "pluralName": "framework-pages",
+    "displayName": "FrameworkPage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Page": {
+      "type": "enumeration",
+      "enum": [
+        "Plan",
+        "Harden",
+        "Validate",
+        "Normalize",
+        "Visualize"
+      ],
+      "required": true
+    },
+    "Icon": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Grabber": {
+      "type": "text",
+      "required": true
+    },
+    "Description": {
+      "type": "richtext",
+      "required": true
+    },
+    "Features": {
+      "displayName": "Feature",
+      "type": "component",
+      "repeatable": true,
+      "component": "feature.feature",
+      "required": true,
+      "min": 1
+    }
+  }
+}
