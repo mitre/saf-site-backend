@@ -4,7 +4,8 @@
   "info": {
     "singularName": "framework-page",
     "pluralName": "framework-pages",
-    "displayName": "FrameworkPage"
+    "displayName": "FrameworkPage",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,29 +20,35 @@
         "Validate",
         "Normalize",
         "Visualize"
-      ]
+      ],
+      "required": true
     },
     "Icon": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "Grabber": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "Description": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "Features": {
       "displayName": "Feature",
       "type": "component",
       "repeatable": true,
-      "component": "feature.feature"
+      "component": "feature.feature",
+      "required": true,
+      "min": 1
     }
   }
 }
