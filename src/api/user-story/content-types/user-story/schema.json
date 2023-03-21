@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_stories",
+  "info": {
+    "singularName": "user-story",
+    "pluralName": "user-stories",
+    "displayName": "UserStory",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "question": {
+      "type": "string",
+      "required": true
+    },
+    "answer": {
+      "type": "richtext",
+      "required": true
+    },
+    "order_id": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}
