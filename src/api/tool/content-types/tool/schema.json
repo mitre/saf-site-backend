@@ -24,39 +24,16 @@
       "type": "richtext",
       "required": true
     },
-    "link_icons": {
-      "type": "media",
-      "multiple": true,
+    "name": {
+      "type": "string",
       "required": true,
-      "allowedTypes": [
-        "images"
-      ]
+      "unique": true
     },
-    "tool_link": {
+    "order_id": {
+      "type": "integer"
+    },
+    "link": {
       "type": "string",
-      "regex": "(https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|www\\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9]+\\.[^\\s]{2,}|www\\.[a-zA-Z0-9]+\\.[^\\s]{2,})",
-      "required": true
-    },
-    "tool_names": {
-      "type": "enumeration",
-      "enum": [
-        "SAF CLI",
-        "Heimdall Lite",
-        "Heimdall Server",
-        "SAF CLI GitHub Action",
-        "InSpec Delta",
-        "Serverless InSpec (AWS)",
-        "Serverless Heimdall Pusher (AWS)",
-        "emasser cli",
-        "eMASS Checklist Updater",
-        "Vulcan (alpha)"
-      ],
-      "required": true
-    },
-    "version": {
-      "type": "string",
-      "regex": "^(\\d+\\.)?(\\d+\\.)?(\\*|\\d+)$",
-      "unique": false,
       "required": true
     }
   }
