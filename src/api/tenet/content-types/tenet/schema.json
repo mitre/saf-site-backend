@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tenets",
+  "info": {
+    "singularName": "tenet",
+    "pluralName": "tenets",
+    "displayName": "Tenet",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "order_id": {
+      "type": "integer",
+      "unique": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "hero_icon": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
