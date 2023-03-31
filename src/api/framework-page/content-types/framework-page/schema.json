@@ -20,14 +20,6 @@
       "type": "richtext",
       "required": true
     },
-    "features": {
-      "displayName": "Feature",
-      "type": "component",
-      "repeatable": true,
-      "component": "feature.feature",
-      "required": true,
-      "min": 1
-    },
     "capability": {
       "type": "relation",
       "relation": "oneToOne",

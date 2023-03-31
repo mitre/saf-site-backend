@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "app_pages",
+  "info": {
+    "singularName": "app-page",
+    "pluralName": "app-pages",
+    "displayName": "AppPage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tool": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tool.tool"
+    },
+    "grabber": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
