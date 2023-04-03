@@ -4,7 +4,8 @@
   "info": {
     "singularName": "app-page",
     "pluralName": "app-pages",
-    "displayName": "AppPage"
+    "displayName": "AppPage",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -22,6 +23,11 @@
     "description": {
       "type": "richtext",
       "required": true
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "feature.feature"
     }
   }
 }
