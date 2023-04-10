@@ -63,7 +63,7 @@ Head back to GitHub and open a pull request for your feature branch. Once review
 NOTE: Local development allows for modifying the database *schema*, but any new *content* you add to your local PostgreSQL database will not be preserved and must be replicated on the production Heroku database.
 
 ## Frontend Development
-- Frontend is handled in the [saf-site-frontend repository](https://github.com/mitre/saf-site). You can tweak the frontend's configuration to point to your local Strapi database for local development.
+- Frontend is handled in the [saf-site-frontend repository](https://github.com/mitre/saf-site-frontend). You can tweak the frontend's configuration to point to your local Strapi database for local development.
 
 
 ## Technology Stack
