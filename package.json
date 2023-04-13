@@ -13,7 +13,7 @@
     "@strapi/plugin-graphql": "^4.6.1",
     "@strapi/plugin-i18n": "^4.6.1",
     "@strapi/plugin-users-permissions": "^4.6.1",
-    "@strapi/provider-upload-cloudinary": "^4.6.1",
+    "@strapi/provider-upload-cloudinary": "^4.9.1",
     "@strapi/strapi": "^4.6.1",
     "fs": "^0.0.1-security",
     "pg": "^8.7.3",
