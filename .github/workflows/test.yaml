@@ -12,8 +12,8 @@ jobs:
         image: postgres:latest
         env:
           POSTGRES_USER: localUser
+          POSTGRES_PASSWORD: ${{'localPassword'}}
           POSTGRES_DB: test
-          PGSSLMODE: disable
         ports:
           - 5432:5432
         options:
@@ -30,4 +30,4 @@ jobs:
         working-directory: ./
         run: yarn test
         env: 
-          DATABASE_URL: postgresql://localUser@localhost:5432/test
+          DATABASE_URL: postgresql://localUser:localPassword@localhost:5432/test
