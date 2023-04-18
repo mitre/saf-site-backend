@@ -30,4 +30,4 @@ jobs:
         working-directory: ./
         run: yarn test
         env: 
-          DATABASE_URL: postgresql://localUser:localPassword@localhost:5432/test
+          DATABASE_URL: postgresql://localUser:localPassword@localhost:5432/test?sslmode=disable
