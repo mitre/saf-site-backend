@@ -22,6 +22,17 @@ jobs:
           --health-timeout 5s
           --health-retries 5
     steps:
+      - name: create env file
+        run: |
+                touch .env
+                echo DATABASE_HOST=${{ secrets.DATABASE_HOST }} >> .env
+                echo DATABASE_PORT=${{ secrets.DATABASE_PORT }} >> .env
+                echo DATABASE_USERNAME=${{ secrets.DATABASE_USERNAME }} >> .env
+                echo DATABASE_PASSWORD=${{ secrets.DATABASE_PASSWORD }} >> .env
+                echo DATABASE_NAME=${{ secrets.DATABASE_NAME }} >> .env
+                echo ADMIN_JWT_SECRET=${{ secrets.ADMIN_JWT_SECRET }} >> .env
+                echo JWT_SECRET=${{ secrets.JWT_SECRET }} >> .env
+                echo API_TOKEN_SALT=${{ secrets.API_TOKEN_SALT }} >> .env
       - uses: actions/checkout@v3
       - name: Install modules
         working-directory: ./
@@ -31,3 +42,5 @@ jobs:
         run: yarn test
         env: 
           DATABASE_URL: postgresql://${{ secrets.DATABASE_USERNAME }}:${{ secrets.DATABASE_PASSWORD }}@localhost:5432/${{ secrets.DATABASE_NAME }}
+      - name: remove env file
+        run: git rm .env
