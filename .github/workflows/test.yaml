@@ -7,6 +7,8 @@ jobs:
   run-tests:
     name: Run Tests
     runs-on: ubuntu-latest
+    environment: 
+      name: saf-site-backend
     services:
       postgres:
         image: postgres:latest
