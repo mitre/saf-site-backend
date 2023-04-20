@@ -35,6 +35,7 @@ jobs:
                 echo ADMIN_JWT_SECRET=${{ secrets.ADMIN_JWT_SECRET }} >> .env
                 echo JWT_SECRET=${{ secrets.JWT_SECRET }} >> .env
                 echo API_TOKEN_SALT=${{ secrets.API_TOKEN_SALT }} >> .env
+                echo .env
       - uses: actions/checkout@v3
       - name: Install modules
         working-directory: ./
