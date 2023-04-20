@@ -4,6 +4,8 @@ on:
   pull_request:
   push:
 jobs:
+  build: 
+    environment: saf-site-backend
   run-tests:
     name: Run Tests
     runs-on: ubuntu-latest
@@ -11,9 +13,9 @@ jobs:
       postgres:
         image: postgres:latest
         env:
-          POSTGRES_USER: localUser
-          POSTGRES_PASSWORD: localPassword
-          POSTGRES_DB: test
+          POSTGRES_USER: ${{ secrets.DATABASE_USERNAME }}
+          POSTGRES_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
+          POSTGRES_DB: ${{ secrets.DATABASE_NAME }}
         ports:
           - 5432:5432
         options:
@@ -30,4 +32,4 @@ jobs:
         working-directory: ./
         run: yarn test
         env: 
-          DATABASE_URL: postgresql://localUser:localPassword@localhost:5432/test
+          DATABASE_URL: postgresql://${{ secrets.DATABASE_USERNAME }}:${{ secrets.DATABASE_PASSWORD }}@localhost:5432/${{ secrets.DATABASE_NAME }}
