@@ -1,0 +1,44 @@
+name: 'Tests'
+
+on:
+  pull_request:
+  push:
+jobs:
+  run-tests:
+    name: Run Tests
+    runs-on: ubuntu-latest
+    environment: 
+      name: saf-site-backend
+    env:
+      DATABASE_PORT: ${{ secrets.DATABASE_PORT }}
+      DATABASE_HOST: ${{ secrets.DATABASE_HOST }}
+      DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
+      DATABASE_USERNAME: ${{ secrets.DATABASE_USERNAME }}
+      DATABASE_NAME: ${{ secrets.DATABASE_NAME }}
+      ADMIN_JWT_SECRET: ${{ secrets.ADMIN_JWT_SECRET }}
+      JWT_SECRET: ${{ secrets.JWT_SECRET }}
+      API_TOKEN_SALT: ${{ secrets.API_TOKEN_SALT }}
+    services:
+      postgres:
+        image: postgres:latest
+        env:
+          POSTGRES_USER: ${{ secrets.DATABASE_USERNAME }}
+          POSTGRES_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
+          POSTGRES_DB: ${{ secrets.DATABASE_NAME }}
+        ports:
+          - 5432:5432
+        options:
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install modules
+        working-directory: ./
+        run: yarn install --frozen-lockfile
+      - name: Run Tests
+        working-directory: ./
+        run: yarn test
+        env: 
+          DATABASE_URL: postgresql://${{ secrets.DATABASE_USERNAME }}:${{ secrets.DATABASE_PASSWORD }}@localhost:5432/${{ secrets.DATABASE_NAME }}

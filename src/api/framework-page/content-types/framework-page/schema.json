@@ -12,43 +12,18 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Page": {
-      "type": "enumeration",
-      "enum": [
-        "Plan",
-        "Harden",
-        "Validate",
-        "Normalize",
-        "Visualize"
-      ],
-      "required": true
-    },
-    "Icon": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
-    "Grabber": {
+    "grabber": {
       "type": "text",
       "required": true
     },
-    "Description": {
+    "description": {
       "type": "richtext",
       "required": true
     },
-    "Features": {
-      "displayName": "Feature",
-      "type": "component",
-      "repeatable": true,
-      "component": "feature.feature",
-      "required": true,
-      "min": 1
+    "capability": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::capability.capability"
     }
   }
 }

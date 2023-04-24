@@ -6,15 +6,15 @@
   },
   "options": {},
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string",
       "required": true
     },
-    "Description": {
+    "description": {
       "type": "text",
       "required": true
     },
-    "Image": {
+    "image": {
       "type": "media",
       "multiple": false,
       "required": true,
