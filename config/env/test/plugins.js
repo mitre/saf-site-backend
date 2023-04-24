@@ -4,20 +4,6 @@ module.exports = ({ env }) => ({
     jwtSecret: env('JWT_SECRET')
     },
   },
-  // upload: {
-  //   config: {
-  //     provider: "cloudinary",
-  //     providerOptions: {
-  //       cloud_name: env("CLOUDINARY_NAME"),
-  //       api_key: env("CLOUDINARY_KEY"),
-  //       api_secret: env("CLOUDINARY_SECRET"),
-  //     },
-  //     actionOptions: {
-  //       upload: {},
-  //       delete: {},
-  //     },
-  //   },
-  // },
   graphql: {
     config: {
         endpoint: '/graphql',
@@ -34,31 +20,8 @@ module.exports = ({ env }) => ({
   ckeditor:{
     enabled: true,
     plugin:{
-      // disable data-theme tag setting // 
-      // setAttribute:false,
-
-      // disable strapi theme, will use default ckeditor theme //
-      // strapiTheme:false,
-      
-      // styles applied to editor container (global scope) //
-      // styles:`
-      // .ck.ck-editor__main .ck-focused{
-      //   max-height: 700px;
-      // }
-      // :root{
-      //   --ck-color-focus-border:red;
-      //   --ck-color-text:red;
-      // }
-      // `
     },
     editor:{ // editor default config
-
-      // https://ckeditor.com/docs/ckeditor5/latest/features/markdown.html
-      // if you need markdown support and output set: removePlugins: [''],
-      // default is 
-      // removePlugins: ['Markdown'],
-
-      // https://ckeditor.com/docs/ckeditor5/latest/features/toolbar/toolbar.html
       toolbar: {
         items: [
           'paragraph',

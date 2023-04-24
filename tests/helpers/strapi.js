@@ -23,13 +23,6 @@ async function cleanupStrapi() {
   // close the connection to the database before deletion
   await strapi.db.connection.destroy();
 
-  //delete test database after all tests have completed
-  // if (dbSettings && dbSettings.connection && dbSettings.connection.filename) {
-  //   const tmpDbFile = dbSettings.connection.filename;
-  //   if (fs.existsSync(tmpDbFile)) {
-  //     fs.unlinkSync(tmpDbFile);
-  //   }
-  // }
 }
 
 module.exports = { setupStrapi, cleanupStrapi };

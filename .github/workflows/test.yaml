@@ -42,5 +42,3 @@ jobs:
         run: yarn test
         env: 
           DATABASE_URL: postgresql://${{ secrets.DATABASE_USERNAME }}:${{ secrets.DATABASE_PASSWORD }}@localhost:5432/${{ secrets.DATABASE_NAME }}
-      # - name: remove env file
-      #   run: git rm .env
