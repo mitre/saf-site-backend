@@ -6,27 +6,40 @@
     "dev": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "test": "jest --forceExit --detectOpenHandles"
   },
   "dependencies": {
-    "@_sh/strapi-plugin-ckeditor": "^1.1.2",
-    "@strapi/plugin-graphql": "^4.6.1",
-    "@strapi/plugin-i18n": "^4.6.1",
-    "@strapi/plugin-users-permissions": "^4.6.1",
+    "@_sh/strapi-plugin-ckeditor": "^1.1.2",,
+    "@strapi/plugin-users-permissions": "^4.9.2",
+    "@strapi/plugin-graphql": "^4.9.2",
+    "@strapi/plugin-i18n": "^4.9.2",
     "@strapi/provider-upload-cloudinary": "^4.9.2",
     "@strapi/strapi": "^4.9.2",
     "fs": "^0.0.1-security",
-    "pg": "^8.7.3",
+    "pg": "^8.10.0",
     "pg-connection-string": "^2.5.0",
-    "sqlite3": "5.1.6",
+    "sqlite3": "^5.1.6",
     "uuidv4": "^6.2.12"
   },
   "strapi": {
     "uuid": "61e8a3da-dbc1-4656-ba9a-d9c78e99ef5c"
   },
   "engines": {
-    "node": ">=12.x.x <=16.x.x",
+    "node": "16.x.x || >=18.x.x",
     "npm": ">=6.0.0"
   },
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "supertest": "^6.3.3"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      ".tmp",
+      ".cache"
+    ],
+    "testEnvironment": "node"
+  }
 }
