@@ -2652,12 +2652,12 @@
     "@strapi/utils" "4.9.2"
     sendmail "^1.6.1"
 
-"@strapi/provider-upload-cloudinary@^4.6.1":
-  version "4.9.0"
-  resolved "https://registry.yarnpkg.com/@strapi/provider-upload-cloudinary/-/provider-upload-cloudinary-4.9.0.tgz#4f6965432a4538770db0fa2909487c858e8da9c9"
-  integrity sha512-nbjQ8kS/l3wRfJGhbOYf9IT3YzqVwCFxBH50usrDbw6aLErtrpsrS6GXTSCPJuaQgpsPTuE8o38Orfj0nToAlA==
+"@strapi/provider-upload-cloudinary@^4.9.2":
+  version "4.9.2"
+  resolved "https://registry.yarnpkg.com/@strapi/provider-upload-cloudinary/-/provider-upload-cloudinary-4.9.2.tgz#fd1b623c486c8ffbd99224f956bfac357ffadaa6"
+  integrity sha512-uCz/5sPIONLMlKK+WmiSEuMRJa2waos3D/8+cZz3YQ4eXr+u1d2q1ZfvHOAN/B3th0vdcY2V2wg9qy6KV6GshQ==
   dependencies:
-    "@strapi/utils" "4.9.0"
+    "@strapi/utils" "4.9.2"
     cloudinary "^1.33.0"
     into-stream "^5.1.0"
 
