@@ -11,11 +11,11 @@
   },
   "dependencies": {
     "@_sh/strapi-plugin-ckeditor": "^1.1.2",
-    "@strapi/plugin-graphql": "^4.10.1",
-    "@strapi/plugin-i18n": "^4.10.1",
-    "@strapi/plugin-users-permissions": "^4.10.1",
-    "@strapi/provider-upload-cloudinary": "^4.10.1",
-    "@strapi/strapi": "^4.10.1",
+    "@strapi/plugin-graphql": "^4.10.5",
+    "@strapi/plugin-i18n": "^4.10.5",
+    "@strapi/plugin-users-permissions": "^4.10.5",
+    "@strapi/provider-upload-cloudinary": "^4.10.5",
+    "@strapi/strapi": "^4.10.5",
     "fs": "^0.0.1-security",
     "pg": "^8.10.0",
     "pg-connection-string": "^2.5.0",
@@ -27,7 +27,7 @@
     "uuid": "61e8a3da-dbc1-4656-ba9a-d9c78e99ef5c"
   },
   "engines": {
-    "node": "18.x.x"
+    "node": "18.16.0"
   },
   "license": "Apache-2.0",
   "devDependencies": {
@@ -41,5 +41,6 @@
       ".cache"
     ],
     "testEnvironment": "node"
-  }
+  },
+  "packageManager": "yarn@3.5.1"
 }
