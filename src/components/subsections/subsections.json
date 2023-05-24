@@ -10,15 +10,19 @@
       "type": "string",
       "required": true
     },
-    "content": {
-      "type": "richtext",
-      "required": true
-    },
     "href": {
       "type": "string",
       "regex": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
       "unique": false,
       "required": true
+    },
+    "content": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "rich"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
     }
   }
 }

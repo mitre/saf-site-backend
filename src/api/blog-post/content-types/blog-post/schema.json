@@ -13,8 +13,12 @@
   "pluginOptions": {},
   "attributes": {
     "content": {
-      "type": "richtext",
-      "required": true
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "rich"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
     },
     "date": {
       "type": "date",

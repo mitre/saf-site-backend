@@ -16,10 +16,6 @@
       "type": "text",
       "required": true
     },
-    "answer": {
-      "type": "richtext",
-      "required": true
-    },
     "author": {
       "type": "relation",
       "relation": "oneToOne",
@@ -30,6 +26,15 @@
       "required": true,
       "min": 1,
       "unique": true
+    },
+    "answer": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "rich"
+      },
+      "required": true,
+      "customField": "plugin::ckeditor.CKEditor"
     }
   }
 }

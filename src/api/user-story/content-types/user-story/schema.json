@@ -16,13 +16,18 @@
       "type": "string",
       "required": true
     },
-    "answer": {
-      "type": "richtext",
-      "required": true
-    },
     "order_id": {
       "type": "integer",
       "required": true
+    },
+    "answer": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "rich"
+      },
+      "required": true,
+      "customField": "plugin::ckeditor.CKEditor"
     }
   }
 }
