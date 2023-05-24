@@ -21,9 +21,6 @@
       "type": "integer",
       "unique": true
     },
-    "description": {
-      "type": "richtext"
-    },
     "icon": {
       "type": "media",
       "multiple": false,
@@ -34,6 +31,15 @@
         "videos",
         "audios"
       ]
+    },
+    "description": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "rich"
+      },
+      "required": true,
+      "customField": "plugin::ckeditor.CKEditor"
     }
   }
 }

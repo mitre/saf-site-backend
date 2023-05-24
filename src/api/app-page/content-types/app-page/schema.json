@@ -20,14 +20,19 @@
     "grabber": {
       "type": "string"
     },
-    "description": {
-      "type": "richtext",
-      "required": true
-    },
     "features": {
       "type": "component",
       "repeatable": true,
       "component": "feature.feature"
+    },
+    "description": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "rich"
+      },
+      "required": true,
+      "customField": "plugin::ckeditor.CKEditor"
     }
   }
 }

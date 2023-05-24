@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "text_contents",
+  "collectionName": "library_pages",
   "info": {
-    "singularName": "text-content",
-    "pluralName": "text-contents",
-    "displayName": "TextContent",
+    "singularName": "library-page",
+    "pluralName": "library-pages",
+    "displayName": "LibraryPage",
     "description": ""
   },
   "options": {
@@ -12,19 +12,18 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
-      "type": "string"
-    },
-    "page": {
-      "type": "string"
-    },
-    "text": {
+    "content": {
       "type": "customField",
       "options": {
         "output": "HTML",
         "preset": "rich"
       },
+      "required": true,
       "customField": "plugin::ckeditor.CKEditor"
+    },
+    "library": {
+      "type": "string",
+      "required": true
     }
   }
 }

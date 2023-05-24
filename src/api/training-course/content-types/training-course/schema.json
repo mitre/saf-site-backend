@@ -17,14 +17,19 @@
       "required": true,
       "unique": true
     },
-    "description": {
-      "type": "richtext",
-      "required": true
-    },
     "index": {
       "type": "integer",
       "required": true,
       "unique": false
+    },
+    "description": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "rich"
+      },
+      "required": true,
+      "customField": "plugin::ckeditor.CKEditor"
     }
   }
 }

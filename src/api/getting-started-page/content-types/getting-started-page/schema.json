@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "getting_started_pages",
+  "info": {
+    "singularName": "getting-started-page",
+    "pluralName": "getting-started-pages",
+    "displayName": "GettingStartedPage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "content": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "rich"
+      },
+      "customField": "plugin::ckeditor.CKEditor",
+      "required": true
+    }
+  }
+}

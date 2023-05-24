@@ -21,10 +21,6 @@
       "type": "string",
       "required": true
     },
-    "description": {
-      "type": "richtext",
-      "required": true
-    },
     "icon": {
       "type": "media",
       "multiple": false,
@@ -37,6 +33,15 @@
       "type": "integer",
       "required": true,
       "unique": false
+    },
+    "description": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "rich"
+      },
+      "required": true,
+      "customField": "plugin::ckeditor.CKEditor"
     }
   }
 }

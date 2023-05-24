@@ -20,10 +20,6 @@
         "images"
       ]
     },
-    "description": {
-      "type": "richtext",
-      "required": true
-    },
     "name": {
       "type": "string",
       "required": true,
@@ -35,6 +31,14 @@
     "link": {
       "type": "string",
       "required": true
+    },
+    "description": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "rich"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
     }
   }
 }
