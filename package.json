@@ -13,7 +13,7 @@
     "@ckeditor/strapi-plugin-ckeditor": "^0.0.7",
     "@strapi/plugin-graphql": "^4.10.5",
     "@strapi/plugin-i18n": "^4.10.5",
-    "@strapi/plugin-users-permissions": "^4.10.5",
+    "@strapi/plugin-users-permissions": "^4.10.6",
     "@strapi/provider-upload-cloudinary": "^4.10.5",
     "@strapi/strapi": "^4.10.5",
     "fs": "^0.0.1-security",
