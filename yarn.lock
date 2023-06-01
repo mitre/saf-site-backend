@@ -1072,6 +1072,13 @@
   dependencies:
     regenerator-runtime "^0.13.11"
 
+"@babel/runtime@^7.21.0":
+  version "7.22.3"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.22.3.tgz#0a7fce51d43adbf0f7b517a71f4c3aaca92ebcbb"
+  integrity sha512-XsDuspWKLUsxwCp6r7EhsExHtYfbe5oAGQ19kqngTdCPUoPQzOPdUbD/pB9PJiwb2ptYKQDjSJT3R6dC+EPqfQ==
+  dependencies:
+    regenerator-runtime "^0.13.11"
+
 "@babel/template@^7.18.10", "@babel/template@^7.20.7", "@babel/template@^7.3.3":
   version "7.20.7"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.20.7.tgz#a15090c2839a83b02aa996c0b4994005841fd5a8"
@@ -3354,13 +3361,13 @@
     "@strapi/utils" "4.10.5"
     sendmail "^1.6.1"
 
-"@strapi/provider-upload-cloudinary@^4.10.5":
-  version "4.10.5"
-  resolved "https://registry.yarnpkg.com/@strapi/provider-upload-cloudinary/-/provider-upload-cloudinary-4.10.5.tgz#5617ab0aa5242ec4d188889f73df702fd9968288"
-  integrity sha512-0BxXXy7oO/gQg+IBh4IJsl0EH/1dNzWzG+Pd9Ksfz/xDwQ5fo+QUFpcoytqk6qai0SjWWdYbguDOULzDJfenQg==
+"@strapi/provider-upload-cloudinary@^4.10.7":
+  version "4.10.7"
+  resolved "https://registry.yarnpkg.com/@strapi/provider-upload-cloudinary/-/provider-upload-cloudinary-4.10.7.tgz#b7b1db3dae125cd4d29b6ff7252e1aa274d48e30"
+  integrity sha512-uFYJRMFHjLb6Gh9h9TjCFvB/F4OaNtJ55bmd/ngJYMOhivpsA4Tqs242GdoYswpMO+iaFY+IMyx/Dw+fIeDInQ==
   dependencies:
-    "@strapi/utils" "4.10.5"
-    cloudinary "^1.33.0"
+    "@strapi/utils" "4.10.7"
+    cloudinary "^1.37.0"
     into-stream "^5.1.0"
 
 "@strapi/provider-upload-local@4.10.5":
@@ -3477,6 +3484,18 @@
   dependencies:
     "@sindresorhus/slugify" "1.1.0"
     date-fns "2.29.3"
+    http-errors "1.8.1"
+    lodash "4.17.21"
+    p-map "4.0.0"
+    yup "0.32.9"
+
+"@strapi/utils@4.10.7":
+  version "4.10.7"
+  resolved "https://registry.yarnpkg.com/@strapi/utils/-/utils-4.10.7.tgz#2cf1aa5958c353e1a1b2e7d3de5e55eff1006cbc"
+  integrity sha512-LyTcpsdcJ6Dq/33eblSU4pN4Yb9VnARA6K5/66cmTTQH34C2bKqkozm7wjK+Y1smK5HA2nvHQiZfpoDtqI0NmA==
+  dependencies:
+    "@sindresorhus/slugify" "1.1.0"
+    date-fns "2.30.0"
     http-errors "1.8.1"
     lodash "4.17.21"
     p-map "4.0.0"
@@ -5373,7 +5392,7 @@ cloudinary-core@2.13.0:
   resolved "https://registry.yarnpkg.com/cloudinary-core/-/cloudinary-core-2.13.0.tgz#b59f90871b6c708c3d0735b9be47ac08181c57fb"
   integrity sha512-Nt0Q5I2FtenmJghtC4YZ3MZZbGg1wLm84SsxcuVwZ83OyJqG9CNIGp86CiI6iDv3QobaqBUpOT7vg+HqY5HxEA==
 
-cloudinary@^1.33.0:
+cloudinary@^1.37.0:
   version "1.37.0"
   resolved "https://registry.yarnpkg.com/cloudinary/-/cloudinary-1.37.0.tgz#26daefc8794e397d21350242d075eca05d744ece"
   integrity sha512-hCAb3kU2nqjaHxDHxh+bi691A6LEuF68A2jHvYR5wDhDxx5qNRJLYqABbmxP6TQJriJd0Tq309fZvzBXkTW6sw==
@@ -5893,6 +5912,13 @@ date-fns@2.29.3:
   version "2.29.3"
   resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.29.3.tgz#27402d2fc67eb442b511b70bbdf98e6411cd68a8"
   integrity sha512-dDCnyH2WnnKusqvZZ6+jA1O51Ibt8ZMRNkDZdyAyK4YfbDwa/cEmuztzG5pk6hqlp9aSBPYcjOlktquahGwGeA==
+
+date-fns@2.30.0:
+  version "2.30.0"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.30.0.tgz#f367e644839ff57894ec6ac480de40cae4b0f4d0"
+  integrity sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==
+  dependencies:
+    "@babel/runtime" "^7.21.0"
 
 debug@2.6.9, debug@^2.2.0, debug@^2.3.3:
   version "2.6.9"
