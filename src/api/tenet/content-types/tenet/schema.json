@@ -21,17 +21,6 @@
       "type": "integer",
       "unique": true
     },
-    "icon": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
     "description": {
       "type": "customField",
       "options": {
