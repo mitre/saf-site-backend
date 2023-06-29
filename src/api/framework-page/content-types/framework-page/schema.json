@@ -16,14 +16,19 @@
       "type": "text",
       "required": true
     },
-    "description": {
-      "type": "richtext",
-      "required": true
-    },
     "capability": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::capability.capability"
+    },
+    "description": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "rich"
+      },
+      "required": true,
+      "customField": "plugin::ckeditor.CKEditor"
     }
   }
 }
