@@ -34,7 +34,6 @@ This repository contains the source code for the upcoming new https://saf.mitre.
         grant all privileges on database CHANGEME_DB_NAME to CHANGEME_USER 
         ```
 
-
 4. Copy `.env-sample` into `.env` and replace `CHANGEME` values as appropriate
 5. Launch application:
    - For development:
