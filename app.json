@@ -28,5 +28,12 @@
       "description": "Cloudinary API Secret",
       "required": "true"
     }
+  },
+  "environments": {
+    "review": {
+      "addons": [
+        "heroku-postgresql:mini"
+      ]
+    }
   }
 }
