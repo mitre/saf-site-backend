@@ -27,7 +27,7 @@
     "uuid": "61e8a3da-dbc1-4656-ba9a-d9c78e99ef5c"
   },
   "engines": {
-    "node": "18.16.0"
+    "node": "^18"
   },
   "license": "Apache-2.0",
   "devDependencies": {
