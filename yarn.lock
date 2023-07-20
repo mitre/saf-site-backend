@@ -2525,10 +2525,10 @@
     prop-types "^15.8.1"
     react-remove-scroll "^2.5.6"
 
-"@strapi/generate-new@4.11.7":
-  version "4.11.7"
-  resolved "https://registry.yarnpkg.com/@strapi/generate-new/-/generate-new-4.11.7.tgz#a61c62d8a8dca0fdb7b72b2167c990338db96ec7"
-  integrity sha512-a9Njs9f3ZuEc+L9NSw2/QI6mcKiySP5Qg7NXz+6bNE92CBjGdwwvJiaAuG/sc6tUfLAvLXslJLJEHIBwXmSAiA==
+"@strapi/generate-new@4.11.2":
+  version "4.11.2"
+  resolved "https://registry.yarnpkg.com/@strapi/generate-new/-/generate-new-4.11.2.tgz#87db2112225b54ae4de710a012ab7ffc7e48d624"
+  integrity sha512-9QXoG2xpZrFmJyV9sSbr/8Yv6ROieOx+XSzt3FerDZ3xaojbVjZ+JqLpG6O44e5VyqcYakL9g25uV4+nMFkUgg==
   dependencies:
     "@sentry/node" "6.19.7"
     chalk "^4.1.2"
@@ -2600,10 +2600,10 @@
   resolved "https://registry.yarnpkg.com/@strapi/icons/-/icons-1.8.2.tgz#d838e6566ba67ecb9adc0fce773cf54e93a13d59"
   integrity sha512-FiSYN7bDk7B8nieXLddyRgU3xMWjOcRSL2Q7b8A+pedIDLiIpfrDnsSlzmpVpU7LtQSnkOcDlFHqEXEm7zwIvg==
 
-"@strapi/logger@4.11.7":
-  version "4.11.7"
-  resolved "https://registry.yarnpkg.com/@strapi/logger/-/logger-4.11.7.tgz#948f3094f60b8412e988bd91420679a9466e79cf"
-  integrity sha512-ewfzWAdueJ8bTEko5oNRolqlV1isNoldDGJrIG23wcmMW0/MADsve70brlLECp5FHR1w3BRF7PRXqHeDTP2BqA==
+"@strapi/logger@4.11.2":
+  version "4.11.2"
+  resolved "https://registry.yarnpkg.com/@strapi/logger/-/logger-4.11.2.tgz#82c8afc3ba66250270ecee8df2be759d2409b36d"
+  integrity sha512-3SjWE+KtMS3FCaaEmj44FBMzj+dfRgroaLNBIvI1wd3+vROeqb9G6cT0WwT7UC5AkJsBqSitqhzer7fLUOUJgQ==
   dependencies:
     lodash "4.17.21"
     winston "3.9.0"
@@ -2741,15 +2741,15 @@
     sharp "0.32.0"
     yup "^0.32.9"
 
-"@strapi/plugin-users-permissions@^4.11.2":
-  version "4.11.2"
-  resolved "https://registry.yarnpkg.com/@strapi/plugin-users-permissions/-/plugin-users-permissions-4.11.2.tgz#fe1a0d5914885b6fb12344bc4fa117a788836bf3"
-  integrity sha512-yqvUARV8enG8yra123J/1BKGmRbsoisjWyd4K7G2URs+4b5R0JDkQrJ65UgLcF/ppk7OEFXpw3O12aV+U2+Aqg==
+"@strapi/plugin-users-permissions@^4.11.7":
+  version "4.11.7"
+  resolved "https://registry.yarnpkg.com/@strapi/plugin-users-permissions/-/plugin-users-permissions-4.11.7.tgz#da5b54c612946de7e25e014d28fae3d94f885f2c"
+  integrity sha512-uRHG8adtP03nkCCRBiZn1S8Vx3KrBqDuOsa4Af3xXxIZOk5SF1PPrR56sTu71soTHX/FCMOGKKSAOSHzLUYB9w==
   dependencies:
-    "@strapi/design-system" "1.8.0"
-    "@strapi/helper-plugin" "4.11.2"
-    "@strapi/icons" "1.8.0"
-    "@strapi/utils" "4.11.2"
+    "@strapi/design-system" "1.8.2"
+    "@strapi/helper-plugin" "4.11.7"
+    "@strapi/icons" "1.8.2"
+    "@strapi/utils" "4.11.7"
     bcryptjs "2.4.3"
     formik "2.4.0"
     grant-koa "5.4.8"
@@ -2763,7 +2763,7 @@
     purest "4.0.2"
     react-intl "6.4.1"
     react-query "3.39.3"
-    react-redux "8.0.5"
+    react-redux "8.1.1"
     url-join "4.0.1"
     yup "^0.32.9"
 
