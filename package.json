@@ -15,9 +15,9 @@
     "@strapi/plugin-i18n": "^4.11.2",
     "@strapi/plugin-users-permissions": "^4.11.7",
     "@strapi/provider-upload-cloudinary": "^4.11.2",
-    "@strapi/strapi": "^4.11.2",
+    "@strapi/strapi": "^4.11.7",
     "fs": "^0.0.1-security",
-    "pg": "^8.10.0",
+    "pg": "^8.11.1",
     "pg-connection-string": "^2.6.0",
     "sqlite3": "^5.1.6",
     "util": "^0.12.5",
@@ -31,7 +31,7 @@
   },
   "license": "Apache-2.0",
   "devDependencies": {
-    "jest": "^29.5.0",
+    "jest": "^29.6.1",
     "supertest": "^6.3.3"
   },
   "jest": {
