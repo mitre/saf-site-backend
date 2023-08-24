@@ -1,13 +1,7 @@
+// ~/strapi-aws-s3/backend/config/middlewares.js
+
 module.exports = [
-  "strapi::errors",
-  "strapi::cors",
-  "strapi::poweredBy",
-  "strapi::logger",
-  "strapi::query",
-  "strapi::body",
-  "strapi::session",
-  "strapi::favicon",
-  "strapi::public",
+  'strapi::errors',
   {
     name: 'strapi::security',
     config: {
@@ -19,14 +13,14 @@ module.exports = [
             "'self'",
             'data:',
             'blob:',
-            'market-assets.strapi.io',
+            'dl.airtable.com',
             'saf-site.s3.us-east-1.amazonaws.com',
           ],
           'media-src': [
             "'self'",
             'data:',
             'blob:',
-            'market-assets.strapi.io',
+            'dl.airtable.com',
             'saf-site.s3.us-east-1.amazonaws.com',
           ],
           upgradeInsecureRequests: null,
@@ -34,4 +28,12 @@ module.exports = [
       },
     },
   },
+  'strapi::cors',
+  'strapi::poweredBy',
+  'strapi::logger',
+  'strapi::query',
+  'strapi::body',
+  'strapi::session',
+  'strapi::favicon',
+  'strapi::public',
 ];
