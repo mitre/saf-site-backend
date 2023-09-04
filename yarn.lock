@@ -2659,10 +2659,10 @@
     "@strapi/utils" "4.13.1"
     sendmail "^1.6.1"
 
-"@strapi/provider-upload-aws-s3@^4.13.1":
-  version "4.13.1"
-  resolved "https://registry.yarnpkg.com/@strapi/provider-upload-aws-s3/-/provider-upload-aws-s3-4.13.1.tgz#b69fe69a81d3a066c081c0e21c0b3ffe90e5ab30"
-  integrity sha512-kTS7zUZ3Uoch1K+b9G1kimJPl/gpLJJOrrOwr+yC2UwTD4Ne+Icfda8+Z5CThNtgvkHKlQGWLqg3rCD53G9QWQ==
+"@strapi/provider-upload-aws-s3@^4.13.2":
+  version "4.13.2"
+  resolved "https://registry.yarnpkg.com/@strapi/provider-upload-aws-s3/-/provider-upload-aws-s3-4.13.2.tgz#b585cda690159e78fc1c89ccd84343411f70a48b"
+  integrity sha512-VgqbyRCWMg6MTNxhMMv2AYChmPOFjOUTsmCPm3uvPbG+CynuX9+9USBMhfTkfZ06kVuHiOSH4jm2LyantmjXmQ==
   dependencies:
     aws-sdk "2.1437.0"
     lodash "4.17.21"
