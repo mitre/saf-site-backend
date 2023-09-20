@@ -2752,6 +2752,23 @@
     react-query "3.39.3"
     react-select "5.7.0"
 
+"@strapi/helper-plugin@4.13.7":
+  version "4.13.7"
+  resolved "https://registry.yarnpkg.com/@strapi/helper-plugin/-/helper-plugin-4.13.7.tgz#4c1e05736ffbc7ba52866d8c2391a5b176a082e8"
+  integrity sha512-El4xRSXp4qf+FNgylWmJ91xWKrdiyd7vU1dN48qRk8jJr5ileGHUDMOJ70ioYUnY/g203w0qVnAPyQug0Yl97Q==
+  dependencies:
+    axios "1.5.0"
+    date-fns "2.30.0"
+    formik "2.4.0"
+    immer "9.0.19"
+    lodash "4.17.21"
+    prop-types "^15.8.1"
+    qs "6.11.1"
+    react-helmet "6.1.0"
+    react-intl "6.4.1"
+    react-query "3.39.3"
+    react-select "5.7.0"
+
 "@strapi/icons@1.10.1":
   version "1.10.1"
   resolved "https://registry.yarnpkg.com/@strapi/icons/-/icons-1.10.1.tgz#d0805fbe630f77e86e71740f64e30b88981ff718"
@@ -2824,17 +2841,17 @@
     react-query "3.39.3"
     yup "0.32.9"
 
-"@strapi/plugin-graphql@^4.13.6":
-  version "4.13.6"
-  resolved "https://registry.yarnpkg.com/@strapi/plugin-graphql/-/plugin-graphql-4.13.6.tgz#b1f2019495d1c72b1375c199679a94f47edb9c9e"
-  integrity sha512-8kbQP6kOITpQRYghsSR8n4brCS1Xe0SjXOPs6w3wsYyiRhx+1wQR+JpGR5CfMSa2ITIXjmvWidSMGeRI+Pik7w==
+"@strapi/plugin-graphql@^4.13.7":
+  version "4.13.7"
+  resolved "https://registry.yarnpkg.com/@strapi/plugin-graphql/-/plugin-graphql-4.13.7.tgz#2acbd0028102c25b71bc1960b822b6291c005ce5"
+  integrity sha512-gTdNbQYaEII4Eur6fbEKjDxLcMBqUZk9+QG8C9A3Gk8cFQOR6d2S/HZUn43NrNehKAhV5VAZKXyJHeqi5NtYnA==
   dependencies:
     "@graphql-tools/schema" "8.5.1"
     "@graphql-tools/utils" "^8.13.1"
     "@strapi/design-system" "1.10.1"
-    "@strapi/helper-plugin" "4.13.6"
+    "@strapi/helper-plugin" "4.13.7"
     "@strapi/icons" "1.10.1"
-    "@strapi/utils" "4.13.6"
+    "@strapi/utils" "4.13.7"
     apollo-server-core "3.12.1"
     apollo-server-koa "3.10.0"
     glob "7.2.3"
@@ -3063,6 +3080,18 @@
   version "4.13.6"
   resolved "https://registry.yarnpkg.com/@strapi/utils/-/utils-4.13.6.tgz#3526979e640d10dc853e277bf628abfdee9a5fcc"
   integrity sha512-9IlkOe+mmZUh1WzQW+oWhEgRYuq2DHDWe1JzaNoCivVssFZh9PUr8GT6JYCk9LrNwGP2uX9o42K03NQi1NZ05A==
+  dependencies:
+    "@sindresorhus/slugify" "1.1.0"
+    date-fns "2.30.0"
+    http-errors "1.8.1"
+    lodash "4.17.21"
+    p-map "4.0.0"
+    yup "0.32.9"
+
+"@strapi/utils@4.13.7":
+  version "4.13.7"
+  resolved "https://registry.yarnpkg.com/@strapi/utils/-/utils-4.13.7.tgz#cf8a9286d04ea9ba7d8c8c1c7b3680f9a6f7cc10"
+  integrity sha512-v1e0408+wYr7WbAxQ1Vdwv117J8GorgAGd9l2y8nhBQIRKpNgFx0Ym93N8YVCtLQPPwHM83TOr/Sc3x99f8jbQ==
   dependencies:
     "@sindresorhus/slugify" "1.1.0"
     date-fns "2.30.0"
@@ -3961,39 +3990,10 @@ apollo-reporting-protobuf@^3.4.0:
   dependencies:
     "@apollo/protobufjs" "1.2.6"
 
-apollo-server-core@3.12.1:
+apollo-server-core@3.12.1, apollo-server-core@^3.10.0:
   version "3.12.1"
   resolved "https://registry.yarnpkg.com/apollo-server-core/-/apollo-server-core-3.12.1.tgz#ba255c37345db29c48a2e0c064c519a8d62eb5af"
   integrity sha512-9SF5WAkkV0FZQ2HVUWI9Jada1U0jg7e8NCN9EklbtvaCeUlOLyXyM+KCWuZ7+dqHxjshbtcwylPHutt3uzoNkw==
-  dependencies:
-    "@apollo/utils.keyvaluecache" "^1.0.1"
-    "@apollo/utils.logger" "^1.0.0"
-    "@apollo/utils.usagereporting" "^1.0.0"
-    "@apollographql/apollo-tools" "^0.5.3"
-    "@apollographql/graphql-playground-html" "1.6.29"
-    "@graphql-tools/mock" "^8.1.2"
-    "@graphql-tools/schema" "^8.0.0"
-    "@josephg/resolvable" "^1.0.0"
-    apollo-datasource "^3.3.2"
-    apollo-reporting-protobuf "^3.4.0"
-    apollo-server-env "^4.2.1"
-    apollo-server-errors "^3.3.1"
-    apollo-server-plugin-base "^3.7.2"
-    apollo-server-types "^3.8.0"
-    async-retry "^1.2.1"
-    fast-json-stable-stringify "^2.1.0"
-    graphql-tag "^2.11.0"
-    loglevel "^1.6.8"
-    lru-cache "^6.0.0"
-    node-abort-controller "^3.0.1"
-    sha.js "^2.4.11"
-    uuid "^9.0.0"
-    whatwg-mimetype "^3.0.0"
-
-apollo-server-core@^3.10.0:
-  version "3.12.0"
-  resolved "https://registry.yarnpkg.com/apollo-server-core/-/apollo-server-core-3.12.0.tgz#8aa2a7329ce6fe1823290c45168c749db01548df"
-  integrity sha512-hq7iH6Cgldgmnjs9FVSZeKWRpi0/ZR+iJ1arzeD2VXGxxgk1mAm/cz1Tx0TYgegZI+FvvrRl0UhKEx7sLnIxIg==
   dependencies:
     "@apollo/utils.keyvaluecache" "^1.0.1"
     "@apollo/utils.logger" "^1.0.0"
@@ -10307,7 +10307,7 @@ react-fast-compare@^3.1.1:
   resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-3.2.2.tgz#929a97a532304ce9fee4bcae44234f1ce2c21d49"
   integrity sha512-nsO+KSNgo1SbJqJEYRE9ERzo7YtYbou/OqjSQKxV7jcKox7+usiUVZOAC+XnDOABXggQTno0Y1CpVnuWEc1boQ==
 
-react-helmet@^6.1.0:
+react-helmet@6.1.0, react-helmet@^6.1.0:
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/react-helmet/-/react-helmet-6.1.0.tgz#a750d5165cb13cf213e44747502652e794468726"
   integrity sha512-4uMzEY9nlDlgxr61NL3XbKRy1hEkXmKNXhjbAIOVw5vcFrsdYbH2FEwcNyWvWinl103nXgzYNlns9ca+8kFiWw==
