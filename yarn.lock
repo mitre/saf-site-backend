@@ -2752,6 +2752,23 @@
     react-query "3.39.3"
     react-select "5.7.0"
 
+"@strapi/helper-plugin@4.13.7":
+  version "4.13.7"
+  resolved "https://registry.yarnpkg.com/@strapi/helper-plugin/-/helper-plugin-4.13.7.tgz#4c1e05736ffbc7ba52866d8c2391a5b176a082e8"
+  integrity sha512-El4xRSXp4qf+FNgylWmJ91xWKrdiyd7vU1dN48qRk8jJr5ileGHUDMOJ70ioYUnY/g203w0qVnAPyQug0Yl97Q==
+  dependencies:
+    axios "1.5.0"
+    date-fns "2.30.0"
+    formik "2.4.0"
+    immer "9.0.19"
+    lodash "4.17.21"
+    prop-types "^15.8.1"
+    qs "6.11.1"
+    react-helmet "6.1.0"
+    react-intl "6.4.1"
+    react-query "3.39.3"
+    react-select "5.7.0"
+
 "@strapi/icons@1.10.1":
   version "1.10.1"
   resolved "https://registry.yarnpkg.com/@strapi/icons/-/icons-1.10.1.tgz#d0805fbe630f77e86e71740f64e30b88981ff718"
@@ -2900,15 +2917,15 @@
     sharp "0.32.0"
     yup "0.32.9"
 
-"@strapi/plugin-users-permissions@^4.13.6":
-  version "4.13.6"
-  resolved "https://registry.yarnpkg.com/@strapi/plugin-users-permissions/-/plugin-users-permissions-4.13.6.tgz#16f199d5f99cd2922f456dd3e3cdb076e6e275f8"
-  integrity sha512-5FprYMl+hG/7MdnBL+wJF4l6FagH9qkIBoTMyrqA1dIXxLmAf6OCXRE943BNYI/4kziHg1o5HfLZ6wqJglKtbA==
+"@strapi/plugin-users-permissions@^4.13.7":
+  version "4.13.7"
+  resolved "https://registry.yarnpkg.com/@strapi/plugin-users-permissions/-/plugin-users-permissions-4.13.7.tgz#9e6ff333898b47f556fa0994ad8868985bee4eee"
+  integrity sha512-tglLusPvv/gQ76GTvfgieuw6+vzXx9A8xmfYOmj94i1tl9MDEwJrmQbpGN2rZOtkIZpQL4mHOfMV/E1bWtiyBA==
   dependencies:
     "@strapi/design-system" "1.10.1"
-    "@strapi/helper-plugin" "4.13.6"
+    "@strapi/helper-plugin" "4.13.7"
     "@strapi/icons" "1.10.1"
-    "@strapi/utils" "4.13.6"
+    "@strapi/utils" "4.13.7"
     bcryptjs "2.4.3"
     formik "2.4.0"
     grant-koa "5.4.8"
@@ -3063,6 +3080,18 @@
   version "4.13.6"
   resolved "https://registry.yarnpkg.com/@strapi/utils/-/utils-4.13.6.tgz#3526979e640d10dc853e277bf628abfdee9a5fcc"
   integrity sha512-9IlkOe+mmZUh1WzQW+oWhEgRYuq2DHDWe1JzaNoCivVssFZh9PUr8GT6JYCk9LrNwGP2uX9o42K03NQi1NZ05A==
+  dependencies:
+    "@sindresorhus/slugify" "1.1.0"
+    date-fns "2.30.0"
+    http-errors "1.8.1"
+    lodash "4.17.21"
+    p-map "4.0.0"
+    yup "0.32.9"
+
+"@strapi/utils@4.13.7":
+  version "4.13.7"
+  resolved "https://registry.yarnpkg.com/@strapi/utils/-/utils-4.13.7.tgz#cf8a9286d04ea9ba7d8c8c1c7b3680f9a6f7cc10"
+  integrity sha512-v1e0408+wYr7WbAxQ1Vdwv117J8GorgAGd9l2y8nhBQIRKpNgFx0Ym93N8YVCtLQPPwHM83TOr/Sc3x99f8jbQ==
   dependencies:
     "@sindresorhus/slugify" "1.1.0"
     date-fns "2.30.0"
@@ -10307,7 +10336,7 @@ react-fast-compare@^3.1.1:
   resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-3.2.2.tgz#929a97a532304ce9fee4bcae44234f1ce2c21d49"
   integrity sha512-nsO+KSNgo1SbJqJEYRE9ERzo7YtYbou/OqjSQKxV7jcKox7+usiUVZOAC+XnDOABXggQTno0Y1CpVnuWEc1boQ==
 
-react-helmet@^6.1.0:
+react-helmet@6.1.0, react-helmet@^6.1.0:
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/react-helmet/-/react-helmet-6.1.0.tgz#a750d5165cb13cf213e44747502652e794468726"
   integrity sha512-4uMzEY9nlDlgxr61NL3XbKRy1hEkXmKNXhjbAIOVw5vcFrsdYbH2FEwcNyWvWinl103nXgzYNlns9ca+8kFiWw==
