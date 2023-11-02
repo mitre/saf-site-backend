@@ -3085,15 +3085,15 @@
     sharp "0.32.6"
     yup "0.32.9"
 
-"@strapi/plugin-users-permissions@^4.15.0":
-  version "4.15.0"
-  resolved "https://registry.yarnpkg.com/@strapi/plugin-users-permissions/-/plugin-users-permissions-4.15.0.tgz#ab6c836346b5db49b15aa402b4e012ec3d7d4b3c"
-  integrity sha512-E/rO/nl1nlTX6k1cPdf0fzX860lz9K94hB9eEppugu1jCS0Mpwo0uXEnGSUg7145JF4lwE1Y5XY1zyy+QpqaRQ==
+"@strapi/plugin-users-permissions@^4.15.1":
+  version "4.15.1"
+  resolved "https://registry.yarnpkg.com/@strapi/plugin-users-permissions/-/plugin-users-permissions-4.15.1.tgz#9a6ba1d7853df755d0112665735be23229be8e47"
+  integrity sha512-vtDpiCR2zPF0MCMi8ACs17Z599ZnSz4Ezf5lqcMNvJevPm21AQ2L1RQfnZ2GwW07Tsbp7fyoRHxAfLUHHu3GwA==
   dependencies:
     "@strapi/design-system" "1.13.0"
-    "@strapi/helper-plugin" "4.15.0"
+    "@strapi/helper-plugin" "4.15.1"
     "@strapi/icons" "1.13.0"
-    "@strapi/utils" "4.15.0"
+    "@strapi/utils" "4.15.1"
     bcryptjs "2.4.3"
     formik "2.4.0"
     grant-koa "5.4.8"
@@ -10234,7 +10234,7 @@ plop@2.7.6:
     ora "^3.4.0"
     v8flags "^2.0.10"
 
-pluralize@8.0.0, pluralize@^8.0.0:
+pluralize@8.0.0:
   version "8.0.0"
   resolved "https://registry.yarnpkg.com/pluralize/-/pluralize-8.0.0.tgz#1a6fa16a38d12a1901e0320fa017051c539ce3b1"
   integrity sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==
