@@ -15,7 +15,7 @@
     "@strapi/plugin-i18n": "^4.15.2",
     "@strapi/plugin-users-permissions": "^4.15.1",
     "@strapi/provider-upload-aws-s3": "^4.15.1",
-    "@strapi/strapi": "^4.15.2",
+    "@strapi/strapi": "^4.15.4",
     "fs": "^0.0.1-security",
     "pg": "^8.11.3",
     "pg-connection-string": "^2.6.1",
