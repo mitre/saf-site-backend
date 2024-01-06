@@ -19,7 +19,7 @@
     "fs": "^0.0.1-security",
     "pg": "^8.11.3",
     "pg-connection-string": "^2.6.1",
-    "sqlite3": "^5.1.6",
+    "sqlite3": "^5.1.7",
     "util": "^0.12.5",
     "uuidv4": "^6.2.12"
   },
