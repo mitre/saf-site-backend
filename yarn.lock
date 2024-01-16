@@ -3924,22 +3924,6 @@
     plop "2.7.6"
     pluralize "8.0.0"
 
-"@strapi/helper-plugin@4.17.0":
-  version "4.17.0"
-  resolved "https://registry.yarnpkg.com/@strapi/helper-plugin/-/helper-plugin-4.17.0.tgz#75bd419146b776bb692ee223636121d4632178e8"
-  integrity sha512-D/O1Rlmk5vmC+U4429HAFj9f2UXQ/Tfw+i3XX004rJorRx0P5qEPajY4w2hUd/SBpqGwzNCJTdr+iYa5npUpWw==
-  dependencies:
-    axios "1.6.0"
-    date-fns "2.30.0"
-    formik "2.4.0"
-    immer "9.0.19"
-    lodash "4.17.21"
-    qs "6.11.1"
-    react-helmet "6.1.0"
-    react-intl "6.4.1"
-    react-query "3.39.3"
-    react-select "5.7.0"
-
 "@strapi/helper-plugin@4.17.1":
   version "4.17.1"
   resolved "https://registry.yarnpkg.com/@strapi/helper-plugin/-/helper-plugin-4.17.1.tgz#e685e21c80de0d4e9fe9c715e78cf913c5da7652"
@@ -4083,16 +4067,16 @@
     nexus "1.3.0"
     pluralize "8.0.0"
 
-"@strapi/plugin-i18n@^4.17.0":
-  version "4.17.0"
-  resolved "https://registry.yarnpkg.com/@strapi/plugin-i18n/-/plugin-i18n-4.17.0.tgz#1169d8c7ca66f05e366dc7269a0c32c78aadd6fe"
-  integrity sha512-ZPPXUSOK0wWRgM7fqKGCuNQDI8Dz5ODsHDp7LZUOy+4Mhj4aQhn4speAOWLD4aDhx8JPZH8xoFf1bAIHzXCplg==
+"@strapi/plugin-i18n@^4.17.1":
+  version "4.17.1"
+  resolved "https://registry.yarnpkg.com/@strapi/plugin-i18n/-/plugin-i18n-4.17.1.tgz#3df41a4a72cbb7caee8d213b952b03a1833ce65e"
+  integrity sha512-ScvczXZb4tMsmuS/IZEHgWyS+A38dou3gj2y52cJYTX7XcGlcKvl2fTovWjs5Cya9n+Z38nZVNwncX/Llexv2A==
   dependencies:
     "@reduxjs/toolkit" "1.9.7"
     "@strapi/design-system" "1.14.1"
-    "@strapi/helper-plugin" "4.17.0"
+    "@strapi/helper-plugin" "4.17.1"
     "@strapi/icons" "1.14.1"
-    "@strapi/utils" "4.17.0"
+    "@strapi/utils" "4.17.1"
     axios "1.6.0"
     formik "2.4.0"
     immer "9.0.19"
@@ -4318,18 +4302,6 @@
     "@radix-ui/react-visually-hidden" "^1.0.3"
     aria-hidden "^1.2.3"
     react-remove-scroll "^2.5.7"
-
-"@strapi/utils@4.17.0":
-  version "4.17.0"
-  resolved "https://registry.yarnpkg.com/@strapi/utils/-/utils-4.17.0.tgz#23da12dcf2535aef6f2e1dd76537b9ce81346e5a"
-  integrity sha512-jiiYilc8BNZJkGgvLkLOJvsP4ra1N82fWcAL+xuvC2K31Vl+8ugX1S3xVCVnRwokUGVNu5qk+CdN5h23pIVFxQ==
-  dependencies:
-    "@sindresorhus/slugify" "1.1.0"
-    date-fns "2.30.0"
-    http-errors "1.8.1"
-    lodash "4.17.21"
-    p-map "4.0.0"
-    yup "0.32.9"
 
 "@strapi/utils@4.17.1":
   version "4.17.1"
