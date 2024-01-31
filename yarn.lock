@@ -3925,17 +3925,17 @@
     react-query "3.39.3"
     yup "0.32.9"
 
-"@strapi/plugin-graphql@^4.19.0":
-  version "4.19.0"
-  resolved "https://registry.yarnpkg.com/@strapi/plugin-graphql/-/plugin-graphql-4.19.0.tgz#96c71d921daf8bdf26db669fe79f6a6b0724930d"
-  integrity sha512-IgHipcmydVZB7iA8vaRf0JO75h9Opq44WEvXW9eGu28V2OqbmW8KorpNmyPm594DWcBK9WfbNRcG5T0AO7pgfA==
+"@strapi/plugin-graphql@^4.19.1":
+  version "4.19.1"
+  resolved "https://registry.yarnpkg.com/@strapi/plugin-graphql/-/plugin-graphql-4.19.1.tgz#74665cad3c11210c5cf5c0984b98488baeb1490e"
+  integrity sha512-FOGSCzvW/RoK66GdlD7MK3f1T8edX4LKz6m5ZWyX+o3qCqnFlY17qgMiyp+1xmeqf8TRJ+Ymzm/gaqtznfHm3Q==
   dependencies:
     "@graphql-tools/schema" "8.5.1"
     "@graphql-tools/utils" "^8.13.1"
     "@strapi/design-system" "1.14.1"
-    "@strapi/helper-plugin" "4.19.0"
+    "@strapi/helper-plugin" "4.19.1"
     "@strapi/icons" "1.14.1"
-    "@strapi/utils" "4.19.0"
+    "@strapi/utils" "4.19.1"
     apollo-server-core "3.12.1"
     apollo-server-koa "3.10.0"
     graphql "^15.5.1"
