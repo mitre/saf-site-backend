@@ -32,7 +32,7 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "jest": "^29.7.0",
-    "supertest": "^6.3.4"
+    "supertest": "^7.0.0"
   },
   "jest": {
     "testPathIgnorePatterns": [
