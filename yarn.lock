@@ -3798,22 +3798,6 @@
     plop "2.7.6"
     pluralize "8.0.0"
 
-"@strapi/helper-plugin@4.24.0":
-  version "4.24.0"
-  resolved "https://registry.yarnpkg.com/@strapi/helper-plugin/-/helper-plugin-4.24.0.tgz#c03d5d6fd257debc5e80a3bd431c7405167ef371"
-  integrity sha512-V4dH2Ra2w636tbuzDVM+6EcoVAeM7bhImKmUAWBMmBVZc1pjFIAH/ksnilTKcwNZnWctocmScpyNVbAtkdS7Wg==
-  dependencies:
-    axios "1.6.0"
-    date-fns "2.30.0"
-    formik "2.4.0"
-    immer "9.0.19"
-    lodash "4.17.21"
-    qs "6.11.1"
-    react-helmet "6.1.0"
-    react-intl "6.4.1"
-    react-query "3.39.3"
-    react-select "5.7.0"
-
 "@strapi/helper-plugin@4.24.1":
   version "4.24.1"
   resolved "https://registry.yarnpkg.com/@strapi/helper-plugin/-/helper-plugin-4.24.1.tgz#5f3992dd49aa5beed49ced592ed129e5858bdc56"
@@ -4010,15 +3994,15 @@
     sharp "0.32.6"
     yup "0.32.9"
 
-"@strapi/plugin-users-permissions@^4.24.0":
-  version "4.24.0"
-  resolved "https://registry.yarnpkg.com/@strapi/plugin-users-permissions/-/plugin-users-permissions-4.24.0.tgz#cd8709091e8a9213d3d08fa4aac35e2684ce53e3"
-  integrity sha512-gXGa8I4VaaY3+nFdBkI57JlJZchlkf6Xzq9Sa17oiXdlGKKjDgsdPETGYcKU+fEJImDTTRYB6lFf4xnzRGjuJA==
+"@strapi/plugin-users-permissions@^4.24.1":
+  version "4.24.1"
+  resolved "https://registry.yarnpkg.com/@strapi/plugin-users-permissions/-/plugin-users-permissions-4.24.1.tgz#598db1d07b61bb515e4c6d65c09c9be03afef10f"
+  integrity sha512-XuvG+X2rQGktpV3Sy1fBUwaWSvfmT6GyZtsgrULQrfrO9MiGKlBOPrPL/u8bqXijBqGWgRNkEbhjj193NwndEQ==
   dependencies:
     "@strapi/design-system" "1.18.0"
-    "@strapi/helper-plugin" "4.24.0"
+    "@strapi/helper-plugin" "4.24.1"
     "@strapi/icons" "1.18.0"
-    "@strapi/utils" "4.24.0"
+    "@strapi/utils" "4.24.1"
     bcryptjs "2.4.3"
     formik "2.4.0"
     grant-koa "5.4.8"
@@ -4195,18 +4179,6 @@
     "@radix-ui/react-visually-hidden" "^1.0.3"
     aria-hidden "^1.2.4"
     react-remove-scroll "^2.5.9"
-
-"@strapi/utils@4.24.0":
-  version "4.24.0"
-  resolved "https://registry.yarnpkg.com/@strapi/utils/-/utils-4.24.0.tgz#7e1e6dca91ff4230d4a1208f33e457fbc7db1c64"
-  integrity sha512-9kOSyatGRDxpDZIJ3R5WaGzt4+z1uiddKbPCwM0oHTqPyxfsTCHGhy7y1N4R64KRKtN2fj+h+A76C6Xf5LZTyQ==
-  dependencies:
-    "@sindresorhus/slugify" "1.1.0"
-    date-fns "2.30.0"
-    http-errors "1.8.1"
-    lodash "4.17.21"
-    p-map "4.0.0"
-    yup "0.32.9"
 
 "@strapi/utils@4.24.1":
   version "4.24.1"
