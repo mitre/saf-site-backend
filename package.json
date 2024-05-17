@@ -42,5 +42,5 @@
     ],
     "testEnvironment": "node"
   },
-  "packageManager": "yarn@3.5.1"
+  "packageManager": "yarn@1.22.22"
 }
