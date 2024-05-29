@@ -14,7 +14,7 @@
     "@strapi/plugin-graphql": "^4.24.3",
     "@strapi/plugin-i18n": "^4.24.3",
     "@strapi/plugin-users-permissions": "^4.24.3",
-    "@strapi/provider-upload-aws-s3": "^4.24.3",
+    "@strapi/provider-upload-aws-s3": "^4.24.4",
     "@strapi/strapi": "^4.24.3",
     "fs": "^0.0.1-security",
     "pg": "^8.11.5",
