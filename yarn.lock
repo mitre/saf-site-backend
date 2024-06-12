@@ -3822,22 +3822,6 @@
     plop "2.7.6"
     pluralize "8.0.0"
 
-"@strapi/helper-plugin@4.24.5":
-  version "4.24.5"
-  resolved "https://registry.yarnpkg.com/@strapi/helper-plugin/-/helper-plugin-4.24.5.tgz#d8460be8ee4f9e0c7b9b68753a7a4a6391724e35"
-  integrity sha512-UgLpivDE2KbxuhvuJpwN8+tFYRR8GnMyWvq9jxPUe0FwNzMcKo0sCBPplA1mJO/whQqmJH2CwEHWfaN34lqdYg==
-  dependencies:
-    axios "1.6.0"
-    date-fns "2.30.0"
-    formik "2.4.0"
-    immer "9.0.19"
-    lodash "4.17.21"
-    qs "6.11.1"
-    react-helmet "6.1.0"
-    react-intl "6.4.1"
-    react-query "3.39.3"
-    react-select "5.7.0"
-
 "@strapi/helper-plugin@4.25.0":
   version "4.25.0"
   resolved "https://registry.yarnpkg.com/@strapi/helper-plugin/-/helper-plugin-4.25.0.tgz#eadf32d89b05e6a0f8cd3149c82722c59b588004"
@@ -4073,10 +4057,10 @@
     "@strapi/utils" "4.25.0"
     sendmail "^1.6.1"
 
-"@strapi/provider-upload-aws-s3@^4.24.5":
-  version "4.24.5"
-  resolved "https://registry.yarnpkg.com/@strapi/provider-upload-aws-s3/-/provider-upload-aws-s3-4.24.5.tgz#c4cd60b3c07628d5412744270a78bc3cf9c87e2e"
-  integrity sha512-0BX/7bViuRqsOv7a2HmIokWS7FWpvI8eV+eGFdphIJVbvq5xUQYJJI5uEvbb8OF0BVSjOtQ4dgj1t/QtXHzNwA==
+"@strapi/provider-upload-aws-s3@^4.25.0":
+  version "4.25.0"
+  resolved "https://registry.yarnpkg.com/@strapi/provider-upload-aws-s3/-/provider-upload-aws-s3-4.25.0.tgz#c82d87abda9bcc0d347e097bf2d3dc0d512aff8b"
+  integrity sha512-5l3eieI20hRxgByYEcZJPBWTb6o7M6Vcl40MZCFOoRiN2Bavs7gB/rkLGAoxgGRz2E5kceHkRbGZsC694Mzdog==
   dependencies:
     "@aws-sdk/client-s3" "3.433.0"
     "@aws-sdk/lib-storage" "3.433.0"
@@ -4221,18 +4205,6 @@
     "@radix-ui/react-visually-hidden" "^1.0.3"
     aria-hidden "^1.2.4"
     react-remove-scroll "^2.5.9"
-
-"@strapi/utils@4.24.5":
-  version "4.24.5"
-  resolved "https://registry.yarnpkg.com/@strapi/utils/-/utils-4.24.5.tgz#ce2dc4be53ab065fc008bfaf50a9f6b7e75042e8"
-  integrity sha512-KPhzgXaJFC2y5JVW1RGVxmkSzLdhIdoVgMTCRf90veyfwkedHXC5iQ0qCvxRvMuvnfw6DqMaqewHGEkt1COM4g==
-  dependencies:
-    "@sindresorhus/slugify" "1.1.0"
-    date-fns "2.30.0"
-    http-errors "1.8.1"
-    lodash "4.17.21"
-    p-map "4.0.0"
-    yup "0.32.9"
 
 "@strapi/utils@4.25.0":
   version "4.25.0"
