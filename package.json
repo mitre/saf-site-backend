@@ -10,7 +10,7 @@
     "test": "jest --forceExit --detectOpenHandles"
   },
   "dependencies": {
-    "@ckeditor/strapi-plugin-ckeditor": "^0.0.11",
+    "@ckeditor/strapi-plugin-ckeditor": "^0.0.12",
     "@strapi/plugin-graphql": "^4.25.2",
     "@strapi/plugin-i18n": "^4.25.2",
     "@strapi/plugin-users-permissions": "^4.25.2",
