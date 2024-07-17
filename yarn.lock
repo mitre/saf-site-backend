@@ -1568,10 +1568,10 @@
     ckeditor5 "42.0.0"
     lodash-es "4.17.21"
 
-"@ckeditor/strapi-plugin-ckeditor@^0.0.12":
-  version "0.0.12"
-  resolved "https://registry.yarnpkg.com/@ckeditor/strapi-plugin-ckeditor/-/strapi-plugin-ckeditor-0.0.12.tgz#6ef1c17fc8514931d7d670f75c2d7c56948bc787"
-  integrity sha512-vN5OuJJrRRj7gDYtWJObS9kJDbNxPEVaeulxfiKwguLDc7ipTlw+rf107WF+ho9G2pcN8+dyRzIEoza3ZNBowQ==
+"@ckeditor/strapi-plugin-ckeditor@^0.0.13":
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/@ckeditor/strapi-plugin-ckeditor/-/strapi-plugin-ckeditor-0.0.13.tgz#f84455dfebba1bc1b0142568c9a58c7e559ce674"
+  integrity sha512-rlm0FVa0q0zkEEUHA8/izr45ueLmrpinkvAhdsVkAKNMsI9vtLvybYvk2/IXrb8Sk8QXZkIK0r6xUlRHH+2xvg==
   dependencies:
     "@ckeditor/ckeditor5-alignment" "^42.0.0"
     "@ckeditor/ckeditor5-autoformat" "^42.0.0"
