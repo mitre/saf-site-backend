@@ -4448,16 +4448,16 @@
     nexus "1.3.0"
     pluralize "8.0.0"
 
-"@strapi/plugin-i18n@^4.25.7":
-  version "4.25.7"
-  resolved "https://registry.yarnpkg.com/@strapi/plugin-i18n/-/plugin-i18n-4.25.7.tgz#f838b018dc7127e322e50772348087ac1d60faa2"
-  integrity sha512-1s+f6eEznwwzFHBDrC0VEpDF1QHiEPfAzm20yqF1CGhK6BlI41MCCm3x+CgSZhezJOX54Dd5MVF5kg+4GQhYVA==
+"@strapi/plugin-i18n@^4.25.8":
+  version "4.25.8"
+  resolved "https://registry.yarnpkg.com/@strapi/plugin-i18n/-/plugin-i18n-4.25.8.tgz#a958abb8c740df9cc5cec1bb5467563d92bd0515"
+  integrity sha512-N6AYBMhbfnTx5go0xoE8LW5RpLZnGAhFs+jI4rq47jDjEOhm7QrGk/k2WXlKNHUApIq2JDEzzD3p4n6mmpVbMg==
   dependencies:
     "@reduxjs/toolkit" "1.9.7"
     "@strapi/design-system" "1.19.0"
-    "@strapi/helper-plugin" "4.25.7"
+    "@strapi/helper-plugin" "4.25.8"
     "@strapi/icons" "1.19.0"
-    "@strapi/utils" "4.25.7"
+    "@strapi/utils" "4.25.8"
     axios "1.6.0"
     formik "2.4.0"
     immer "9.0.19"
