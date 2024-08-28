@@ -4289,22 +4289,6 @@
     plop "2.7.6"
     pluralize "8.0.0"
 
-"@strapi/helper-plugin@4.25.8":
-  version "4.25.8"
-  resolved "https://registry.yarnpkg.com/@strapi/helper-plugin/-/helper-plugin-4.25.8.tgz#068d6cc28f7e98291320c5758cb7d4e436965e16"
-  integrity sha512-Fz6wO1vl2U1AzPVhuj35nQjUFPHQSFc1xmDv0pbjqpLIXNLHDJ6K7rIXuyLu9CqDIyUYnL3NjEdo+G0UOK52Tw==
-  dependencies:
-    axios "1.6.0"
-    date-fns "2.30.0"
-    formik "2.4.0"
-    immer "9.0.19"
-    lodash "4.17.21"
-    qs "6.11.1"
-    react-helmet "6.1.0"
-    react-intl "6.4.1"
-    react-query "3.39.3"
-    react-select "5.7.0"
-
 "@strapi/helper-plugin@4.25.9":
   version "4.25.9"
   resolved "https://registry.yarnpkg.com/@strapi/helper-plugin/-/helper-plugin-4.25.9.tgz#34ff9dfcab19b62c2330e9fa917af4f40e5ffb8a"
@@ -4448,17 +4432,17 @@
     nexus "1.3.0"
     pluralize "8.0.0"
 
-"@strapi/plugin-i18n@^4.25.8":
-  version "4.25.8"
-  resolved "https://registry.yarnpkg.com/@strapi/plugin-i18n/-/plugin-i18n-4.25.8.tgz#a958abb8c740df9cc5cec1bb5467563d92bd0515"
-  integrity sha512-N6AYBMhbfnTx5go0xoE8LW5RpLZnGAhFs+jI4rq47jDjEOhm7QrGk/k2WXlKNHUApIq2JDEzzD3p4n6mmpVbMg==
+"@strapi/plugin-i18n@^4.25.9":
+  version "4.25.9"
+  resolved "https://registry.yarnpkg.com/@strapi/plugin-i18n/-/plugin-i18n-4.25.9.tgz#063344407a008f659a4ea488eb052aa0f6f292d8"
+  integrity sha512-0Py2BJZmo9z1Leda7pDktwx5cyDyDAEEn7IoujUvuxnrjkqEoNMHh5+CiMeviYH4YkJwgKbFzpCkbDFDfH79FQ==
   dependencies:
     "@reduxjs/toolkit" "1.9.7"
     "@strapi/design-system" "1.19.0"
-    "@strapi/helper-plugin" "4.25.8"
+    "@strapi/helper-plugin" "4.25.9"
     "@strapi/icons" "1.19.0"
-    "@strapi/utils" "4.25.8"
-    axios "1.6.0"
+    "@strapi/utils" "4.25.9"
+    axios "1.7.4"
     formik "2.4.0"
     immer "9.0.19"
     lodash "4.17.21"
@@ -4688,18 +4672,6 @@
     "@radix-ui/react-visually-hidden" "^1.0.3"
     aria-hidden "^1.2.4"
     react-remove-scroll "^2.5.9"
-
-"@strapi/utils@4.25.8":
-  version "4.25.8"
-  resolved "https://registry.yarnpkg.com/@strapi/utils/-/utils-4.25.8.tgz#49f15d853387f2080ba2a91c41c31c469e36bb5d"
-  integrity sha512-cyz18XLqhHKLIdEbwkL+7emCu3tViDUyRittGEFaOPfMnxSmlJ1dDVmZ8BJ7HFhx1KXcylrYju8I/5/NG3S6SQ==
-  dependencies:
-    "@sindresorhus/slugify" "1.1.0"
-    date-fns "2.30.0"
-    http-errors "1.8.1"
-    lodash "4.17.21"
-    p-map "4.0.0"
-    yup "0.32.9"
 
 "@strapi/utils@4.25.9":
   version "4.25.9"
@@ -5850,15 +5822,6 @@ available-typed-arrays@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/available-typed-arrays/-/available-typed-arrays-1.0.5.tgz#92f95616501069d07d10edb2fc37d3e1c65123b7"
   integrity sha512-DMD0KiN46eipeziST1LPP/STfDU0sufISXmjSgvVsoU2tqxctQeASejWcfNtxYKqETM1UxQ8sp2OrSBWpHY6sw==
-
-axios@1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-1.6.0.tgz#f1e5292f26b2fd5c2e66876adc5b06cdbd7d2102"
-  integrity sha512-EZ1DYihju9pwVB+jg67ogm+Tmqc6JmhamRN6I4Zt8DfZu5lbcQGw3ozH9lFejSJgs/ibaef3A9PMXPLeefFGJg==
-  dependencies:
-    follow-redirects "^1.15.0"
-    form-data "^4.0.0"
-    proxy-from-env "^1.1.0"
 
 axios@1.7.4:
   version "1.7.4"
@@ -7983,11 +7946,6 @@ fn.name@1.x.x:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/fn.name/-/fn.name-1.1.0.tgz#26cad8017967aea8731bc42961d04a3d5988accc"
   integrity sha512-GRnmB5gPyJpAhTQdSZTSp9uaPSvl09KoYcMQtsB9rQoOmzs9dH6ffeccH+Z+cv6P68Hu5bC6JjRh4Ah/mHSNRw==
-
-follow-redirects@^1.15.0:
-  version "1.15.2"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.2.tgz#b460864144ba63f2681096f274c4e57026da2c13"
-  integrity sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==
 
 follow-redirects@^1.15.2:
   version "1.15.3"
