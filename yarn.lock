@@ -4305,22 +4305,6 @@
     react-query "3.39.3"
     react-select "5.7.0"
 
-"@strapi/helper-plugin@4.25.9":
-  version "4.25.9"
-  resolved "https://registry.yarnpkg.com/@strapi/helper-plugin/-/helper-plugin-4.25.9.tgz#34ff9dfcab19b62c2330e9fa917af4f40e5ffb8a"
-  integrity sha512-SFHVvKTf/7TNenDa6/6aafMvYyUKWWos+rjwL8qHqG975we9IZIjiQHYytJY5ZzYYAnL7vsT86RKmTA96Kf+bQ==
-  dependencies:
-    axios "1.7.4"
-    date-fns "2.30.0"
-    formik "2.4.0"
-    immer "9.0.19"
-    lodash "4.17.21"
-    qs "6.11.1"
-    react-helmet "6.1.0"
-    react-intl "6.4.1"
-    react-query "3.39.3"
-    react-select "5.7.0"
-
 "@strapi/icons@1.19.0":
   version "1.19.0"
   resolved "https://registry.yarnpkg.com/@strapi/icons/-/icons-1.19.0.tgz#efa6b553a7de437171512e3549859faa141a145f"
@@ -4448,16 +4432,16 @@
     nexus "1.3.0"
     pluralize "8.0.0"
 
-"@strapi/plugin-i18n@^4.25.9":
-  version "4.25.9"
-  resolved "https://registry.yarnpkg.com/@strapi/plugin-i18n/-/plugin-i18n-4.25.9.tgz#063344407a008f659a4ea488eb052aa0f6f292d8"
-  integrity sha512-0Py2BJZmo9z1Leda7pDktwx5cyDyDAEEn7IoujUvuxnrjkqEoNMHh5+CiMeviYH4YkJwgKbFzpCkbDFDfH79FQ==
+"@strapi/plugin-i18n@^4.25.11":
+  version "4.25.11"
+  resolved "https://registry.yarnpkg.com/@strapi/plugin-i18n/-/plugin-i18n-4.25.11.tgz#fec0d3ef76aa77916b571ede3675a91769729739"
+  integrity sha512-15p+f7/fGphn2KNY92n+GVHEykbshKHoN3+UbB3Lwlyi71r4kfMx3+KmJs3P6DtCMu1obwENRkYIKHUsrmKspg==
   dependencies:
     "@reduxjs/toolkit" "1.9.7"
     "@strapi/design-system" "1.19.0"
-    "@strapi/helper-plugin" "4.25.9"
+    "@strapi/helper-plugin" "4.25.11"
     "@strapi/icons" "1.19.0"
-    "@strapi/utils" "4.25.9"
+    "@strapi/utils" "4.25.11"
     axios "1.7.4"
     formik "2.4.0"
     immer "9.0.19"
@@ -4693,18 +4677,6 @@
   version "4.25.11"
   resolved "https://registry.yarnpkg.com/@strapi/utils/-/utils-4.25.11.tgz#e72e54f7b6040b745725329efcf618bc7a851fbf"
   integrity sha512-rY0fRho4qK9WP7s7rNT8Yn8evUT7WcjlVpVEjkRVSKm2sOMVkleqVjnUb361lP0x7InI4G0mPsNaS2TM6YCEPQ==
-  dependencies:
-    "@sindresorhus/slugify" "1.1.0"
-    date-fns "2.30.0"
-    http-errors "1.8.1"
-    lodash "4.17.21"
-    p-map "4.0.0"
-    yup "0.32.9"
-
-"@strapi/utils@4.25.9":
-  version "4.25.9"
-  resolved "https://registry.yarnpkg.com/@strapi/utils/-/utils-4.25.9.tgz#bf917a03efd1ec595ccbb8494e63f931a95b0f97"
-  integrity sha512-tAcxiT0l0Of3FSsN1K2/BfpwyRP8ZbnjjpKZsODRj+OIWPAMFuEBYet4CFBpbu2jjPsc/maTtaSOBwNrJRN2bA==
   dependencies:
     "@sindresorhus/slugify" "1.1.0"
     date-fns "2.30.0"
