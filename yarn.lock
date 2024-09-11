@@ -4517,15 +4517,15 @@
     sharp "0.32.6"
     yup "0.32.9"
 
-"@strapi/plugin-users-permissions@^4.25.10":
-  version "4.25.10"
-  resolved "https://registry.yarnpkg.com/@strapi/plugin-users-permissions/-/plugin-users-permissions-4.25.10.tgz#4b636b4a3b59d0d78db84b74df3b72769be5f971"
-  integrity sha512-jcpXuvaLQxGGQf1wyl2fVmobte6xsraXpxYA9E5fk5/Eli5ZG31C2LOOGVqNdw2gX6eQEkVICn6zDLncjbeUhg==
+"@strapi/plugin-users-permissions@^4.25.11":
+  version "4.25.11"
+  resolved "https://registry.yarnpkg.com/@strapi/plugin-users-permissions/-/plugin-users-permissions-4.25.11.tgz#c913b5cba828d0981905dd36b4375d95b94a9f75"
+  integrity sha512-7iaqUf2GnaPGHmaSjbdq6thgLtT9N79uQU2DQn69oJr9r2dzgdObDsEQMsL7Ig2qaHWdAssCNJKF4EcsV7A54g==
   dependencies:
     "@strapi/design-system" "1.19.0"
-    "@strapi/helper-plugin" "4.25.10"
+    "@strapi/helper-plugin" "4.25.11"
     "@strapi/icons" "1.19.0"
-    "@strapi/utils" "4.25.10"
+    "@strapi/utils" "4.25.11"
     bcryptjs "2.4.3"
     formik "2.4.0"
     grant-koa "5.4.8"
