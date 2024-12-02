@@ -1103,25 +1103,25 @@
   dependencies:
     "@ucast/mongo2js" "^1.3.0"
 
-"@ckeditor/ckeditor5-integrations-common@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-integrations-common/-/ckeditor5-integrations-common-2.0.0.tgz#09ea8a6a6a3c01f601260a85d9af98ede78644cf"
-  integrity sha512-Gkt7tYVv168voQZFdN4PxVp6M5/ZgzIOrqI6uPRjuk73dYjdLCeotnEXYejE6cxyLi9m2UM2mvhXibOIKVcoPw==
+"@ckeditor/ckeditor5-integrations-common@^2.2.2":
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-integrations-common/-/ckeditor5-integrations-common-2.2.2.tgz#c494b51ad0736d087a7bc13ec634e2d66db42d5b"
+  integrity sha512-SKGBBrwFFmSEZawR8P9tHGRq/l2OoqoJxy9f7j0HbDGEwIpSOsCSgH0xudD6lcEbWG4QWrCS28p5n8lgPA5elQ==
 
-"@ckeditor/ckeditor5-react@^9.1.0":
-  version "9.2.0"
-  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-react/-/ckeditor5-react-9.2.0.tgz#2722287d12bf671d8789236ad4eb5d87c61cabd8"
-  integrity sha512-BjSpzvRQT4PO4Le2hoCZdcVqh9WRYnOZcNuoOP2DQothZSgBfE79nMK80hU+SXqWa55QE0eX46rx9JgNwGUCrw==
+"@ckeditor/ckeditor5-react@^9.3.0":
+  version "9.4.0"
+  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-react/-/ckeditor5-react-9.4.0.tgz#2d750ed585a4668931be089da7a02e823c706f16"
+  integrity sha512-8PU7YUV0ZKYP10akKgarT8nq5QxEDPmuj6Wn5dl/DJ7qroDx6VuC/ysCYcgljseimbDNYDjPQKhatNEcsMd7Ew==
   dependencies:
-    "@ckeditor/ckeditor5-integrations-common" "^2.0.0"
+    "@ckeditor/ckeditor5-integrations-common" "^2.2.2"
     prop-types "^15.7.2"
 
-"@ckeditor/strapi-plugin-ckeditor@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@ckeditor/strapi-plugin-ckeditor/-/strapi-plugin-ckeditor-1.0.2.tgz#521eef22574faf5022d1687872b8eb21c217dd2b"
-  integrity sha512-0vm6c669PrEr73fh9XyIoda3CqgZJn9IE05+Em4PXzd5OgexRUZITkiBVOHzOqsR2djufWytcZ1g0M1XN2eDeQ==
+"@ckeditor/strapi-plugin-ckeditor@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@ckeditor/strapi-plugin-ckeditor/-/strapi-plugin-ckeditor-1.1.0.tgz#991bb7ed0576f852803128ec9a3cefec82b4730e"
+  integrity sha512-J8ggjMo/kp3pzAXpi8J00rXdDyPEMHOEsY52zOp99FpCB7POQxq5W6qpdwESFA4yNkHAhchxK+FLLeBYEtY5eg==
   dependencies:
-    "@ckeditor/ckeditor5-react" "^9.1.0"
+    "@ckeditor/ckeditor5-react" "^9.3.0"
 
 "@codemirror/autocomplete@^6.0.0":
   version "6.8.0"
