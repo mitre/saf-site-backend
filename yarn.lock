@@ -4059,10 +4059,10 @@
     "@strapi/utils" "4.25.17"
     sendmail "^1.6.1"
 
-"@strapi/provider-upload-aws-s3@^5.5.0":
-  version "5.5.0"
-  resolved "https://registry.yarnpkg.com/@strapi/provider-upload-aws-s3/-/provider-upload-aws-s3-5.5.0.tgz#5f21610422b96729438d628585a0f72d7b206712"
-  integrity sha512-Vpy2yPSmrt08fR+E0AWccIt69Z1KjufI47TbN5Xn5SFc5S0j7zBqohJLQInpQGBaGvgJQluNvfA9cEV1/K/aKQ==
+"@strapi/provider-upload-aws-s3@^5.5.1":
+  version "5.5.1"
+  resolved "https://registry.yarnpkg.com/@strapi/provider-upload-aws-s3/-/provider-upload-aws-s3-5.5.1.tgz#72f6d1287e051ddedf40742c98a72dd31ee6d405"
+  integrity sha512-n3n/ue9WVWuaiECwLH/dtlHuVedxfAClUnGXdaQZh+aqILt2dBfGNXIRJQYvKtFKIMJSI6WMsDGTn7F2DjQTbA==
   dependencies:
     "@aws-sdk/client-s3" "3.600.0"
     "@aws-sdk/lib-storage" "3.433.0"
