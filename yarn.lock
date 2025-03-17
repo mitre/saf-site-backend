@@ -1116,10 +1116,10 @@
     "@ckeditor/ckeditor5-integrations-common" "^2.2.2"
     prop-types "^15.7.2"
 
-"@ckeditor/strapi-plugin-ckeditor@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@ckeditor/strapi-plugin-ckeditor/-/strapi-plugin-ckeditor-1.1.0.tgz#991bb7ed0576f852803128ec9a3cefec82b4730e"
-  integrity sha512-J8ggjMo/kp3pzAXpi8J00rXdDyPEMHOEsY52zOp99FpCB7POQxq5W6qpdwESFA4yNkHAhchxK+FLLeBYEtY5eg==
+"@ckeditor/strapi-plugin-ckeditor@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@ckeditor/strapi-plugin-ckeditor/-/strapi-plugin-ckeditor-1.1.1.tgz#2b1ec733b08c04c69e88e5d210d8ea54b0387ed1"
+  integrity sha512-9uSnpq1zDvmW+2xpKSPsM11A/FTkK3q+JcmgBJVU6qNuR1WCkaYrQml8d/O43akOlHXng5ODCyVf2pVdYZpfOg==
   dependencies:
     "@ckeditor/ckeditor5-react" "^9.3.0"
 
